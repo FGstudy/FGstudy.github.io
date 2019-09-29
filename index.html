@@ -203,12 +203,136 @@
             
 
   
+    <article id="post-js中keyup-keypress-keydown以及oninput四个事件" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2019/09/29/js中keyup-keypress-keydown以及oninput四个事件/" target="_blank">js中keyup, keypress, keydown以及oninput四个事件.md</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2019/09/29/js中keyup-keypress-keydown以及oninput四个事件/" class="archive-article-date">
+        <time datetime="2019-09-29T02:19:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-29</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="关于js中keyup-keypress-keydown以及oninput四个事件"><a href="#关于js中keyup-keypress-keydown以及oninput四个事件" class="headerlink" title="关于js中keyup, keypress, keydown以及oninput四个事件"></a>关于js中keyup, keypress, keydown以及oninput四个事件</h1><h2 id="基本知识"><a href="#基本知识" class="headerlink" title="基本知识"></a>基本知识</h2><h3 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h3><ol>
+<li>keydown事件：当用户按下键盘上的任意键时触发，而且如果按住不放的话，会重复触发此事件。</li>
+<li>keypress事件：当用户按下键盘上的字符键时触发，而且如果按住不放的话，会重复触发此事件。</li>
+<li>keyup事件：当用户释放键盘上的键时触发。</li>
+<li>oninput事件：在 &lt;input&gt; 或 &lt;textarea&gt; 元素的值发生改变时触发<h3 id="具体触发效果"><a href="#具体触发效果" class="headerlink" title="具体触发效果"></a>具体触发效果</h3><h4 id="测试代码"><a href="#测试代码" class="headerlink" title="测试代码"></a>测试代码</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">//测试keyup, keypress, keydown以及oninput四个事件的触发机制</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;wrapper&quot;&gt;</span><br><span class="line">    &lt;input id=&quot;input&quot; type=&quot;text&quot;&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">    var input = document.getElementById(&quot;input&quot;);</span><br><span class="line">    input.addEventListener(&quot;keyup&quot;,function()&#123;</span><br><span class="line">        console.log(&apos;event handle keyup&apos;);</span><br><span class="line">    &#125;);</span><br><span class="line">    input.addEventListener(&quot;keydown&quot;,function()&#123;</span><br><span class="line">        console.log(&apos;event handle keydown&apos;);</span><br><span class="line">    &#125;);</span><br><span class="line">    input.addEventListener(&quot;keypress&quot;,function()&#123;</span><br><span class="line">        console.log(&apos;event handle keypress&apos;);</span><br><span class="line">    &#125;);</span><br><span class="line">    input.addEventListener(&quot;input&quot;,function()&#123;</span><br><span class="line">        console.log(&apos;event handle input&apos;);</span><br><span class="line">    &#125;);</span><br><span class="line">			</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h4 id="效果（在英文输入法下，暂不考虑中文输入法下的情况）"><a href="#效果（在英文输入法下，暂不考虑中文输入法下的情况）" class="headerlink" title="效果（在英文输入法下，暂不考虑中文输入法下的情况）"></a>效果（在英文输入法下，暂不考虑中文输入法下的情况）</h4><ol>
+<li>当按下单个字符键时，依次触发keydown-keypress-input-keyup四个事件</li>
+<li>如果按回车键，依次触发keydown-keypress-keyup，注意没有触发input事件</li>
+<li>如果按非字符键如方向键、ESC键、f1-f12等，依次触发keydown–keyup， 注意没有keypress,input事件</li>
+<li>长按某一个键时：<ul>
+<li>如果是字符键，会一直触发 keydown-keypress-input，松手后触发keyup事件。</li>
+<li>如果是非字符键，会在按住的时候一直触发keydown事件，松手后触发keyup事件。</li>
+<li>如果是回车键，会一直循环触发keydown-keypress-keyup事件</li>
+</ul>
+</li>
+<li>按f5键，不触发所述四个事件</li>
+</ol>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><h3 id="字符键与非字符键"><a href="#字符键与非字符键" class="headerlink" title="字符键与非字符键"></a>字符键与非字符键</h3><ol>
+<li>字符键，所有按下后能在输入框有所显示的键<ul>
+<li>数字0-9</li>
+<li>字母a-zA-Z</li>
+<li>能显示出来的符号+-*/，。、·等等</li>
+</ul>
+</li>
+<li>非字符键：除字符键以外的键，例如F1-12、SHIFT、Alt、Ctrl、Insert、Home、PgUp、Delete、End、PgDn、ScrollLock、Pause、NumLock、{菜单键}、{开始键}和方向键等</li>
+</ol>
+<link rel="stylesheet" type="text/css" href="/css/auto-number-title.css">
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2019/09/29/js中keyup-keypress-keydown以及oninput四个事件/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
   <div class="article-entry" itemprop="articleBody">
     
-    <h1 id="welcome"><a href="#welcome" class="headerlink" title="welcome"></a>welcome</h1>
+    <h1 id="welcome"><a href="#welcome" class="headerlink" title="welcome"></a>welcome</h1><h2 id="记录"><a href="#记录" class="headerlink" title="记录"></a>记录</h2><p>在搭建这个个人博客的过程中踩了很多的坑，出现了不少bug，硬着头皮一点一点查，一点一点改，慢慢的雏形就出来了。虽然还有很多地方没有完善，不过慢慢来吧。事情总会一步一步的完成的。<br><br></p>
+
     
 
     
@@ -380,6 +504,18 @@
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">博客</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
