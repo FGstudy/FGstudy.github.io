@@ -77,9 +77,9 @@
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/" target="_blank">主页</a></li>
+				<li><a href="/" target="_blank">首页</a></li>
 	        
-				<li><a href="https://zhousiwei.gitee.io/ibooks/" target="_blank">技术笔记</a></li>
+				<li><a href="/tags/读书笔记/" target="_blank">读书笔记</a></li>
 	        
 				<li><a href="/tags/随笔/" target="_blank">随笔</a></li>
 	        
@@ -92,7 +92,7 @@
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友情链接</a>
     			
             
     			
@@ -103,7 +103,7 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" href="#" title="GitHub" target="_blank"><i class="icon-github"></i></a>
+					<a class="github" href="https://github.com/FGstudy" title="GitHub" target="_blank"><i class="icon-github"></i></a>
 		        
 					<a class="gitee" href="#" title="码云" target="_blank"><i class="icon-gitee"></i></a>
 		        
@@ -167,7 +167,7 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="GitHub"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://github.com/FGstudy" title="GitHub"><i class="icon-github"></i></a>
 			        
 						<a class="gitee" target="_blank" href="#" title="码云"><i class="icon-gitee"></i></a>
 			        
@@ -180,9 +180,9 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">首页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="https://zhousiwei.gitee.io/ibooks/">技术笔记</a></li>
+					<li style="width: 33.333333333333336%"><a href="/tags/读书笔记/">读书笔记</a></li>
 		        
 					<li style="width: 33.333333333333336%"><a href="/tags/随笔/">随笔</a></li>
 		        
@@ -201,6 +201,933 @@
           </div>
           <div id="js-content" class="content-ll">
             
+
+  
+    <article id="post-js高级程序设计第七部分" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2019/10/01/js高级程序设计第七部分/" target="_blank">js高级程序设计第七部分</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2019/10/01/js高级程序设计第七部分/" class="archive-article-date">
+        <time datetime="2019-10-01T08:58:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-01</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="js高级程序设计：canvas、错误调试、json、ajax、其它"><a href="#js高级程序设计：canvas、错误调试、json、ajax、其它" class="headerlink" title="js高级程序设计：canvas、错误调试、json、ajax、其它"></a>js高级程序设计：canvas、错误调试、json、ajax、其它</h1><h2 id="使用-Canvas-绘图"><a href="#使用-Canvas-绘图" class="headerlink" title="使用 Canvas 绘图"></a>使用 Canvas 绘图</h2><h3 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h3><ol>
+<li>要使用<canvas>元素，必须先设置其 width 和 height 属性，指定可以绘图的区域大小。</canvas></li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;canvas id=&quot;drawing&quot; width=&quot; 200&quot; height=&quot;200&quot;&gt;A drawing of something.&lt;/canvas&gt;</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>要在这块画布（canvas）上绘图，需要取得绘图上下文。而取得绘图上下文对象的引用，需要调用getContext()方法并传入上下文的名字,注意要先检测getContext()方法是否存在</li>
+<li>使用 toDataURL()方法，可以导出在<canvas>元素上绘制的图像。这个方法接受一个参数，即图像的 MIME 类型格式，而且适合用于创建图像的任何上下文<br>后面的内容在首页不显示，请点击下方的展开全文或者
+    
+    <a class="article-more-a" href="/2019/10/01/js高级程序设计第七部分/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">读书笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2019/10/01/js高级程序设计第七部分/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-js高级程序设计第六部分" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2019/10/01/js高级程序设计第六部分/" target="_blank">js高级程序设计第六部分</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2019/10/01/js高级程序设计第六部分/" class="archive-article-date">
+        <time datetime="2019-10-01T08:54:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-01</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="js高级程序设计：事件、表单操作"><a href="#js高级程序设计：事件、表单操作" class="headerlink" title="js高级程序设计：事件、表单操作"></a>js高级程序设计：事件、表单操作</h1><h2 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h2><p>事件就是用户或浏览器自身执行的某种动作。可以使用侦听器（或处理程序）来预订事件，以便事件发生时执行相应的代码</p>
+<h3 id="事件流，从页面中接收事件的顺序"><a href="#事件流，从页面中接收事件的顺序" class="headerlink" title="事件流，从页面中接收事件的顺序"></a>事件流，从页面中接收事件的顺序</h3><h4 id="事件冒泡"><a href="#事件冒泡" class="headerlink" title="事件冒泡"></a>事件冒泡</h4><p>事件冒泡（event bubbling），即事件开始时由最具体的元素（文档中嵌套层次最深的那个节点）接收，然后逐级向上传播到较为不具体的节点（文档）</p>
+<h4 id="事件捕获"><a href="#事件捕获" class="headerlink" title="事件捕获"></a>事件捕获</h4><p>事件捕获的思想是不太具体的节点应该更早接收到事件，而最具体的节点应该最后接收到事件。事件捕获的用意在于在事件到达预定目标之前捕获它<br>后面的内容在首页不显示，请点击下方的展开全文或者
+    
+    <a class="article-more-a" href="/2019/10/01/js高级程序设计第六部分/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">读书笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2019/10/01/js高级程序设计第六部分/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-js高级程序设计第五部分" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2019/10/01/js高级程序设计第五部分/" target="_blank">js高级程序设计第五部分</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2019/10/01/js高级程序设计第五部分/" class="archive-article-date">
+        <time datetime="2019-10-01T08:54:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-01</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="js高级程序设计：DOM"><a href="#js高级程序设计：DOM" class="headerlink" title="js高级程序设计：DOM"></a>js高级程序设计：DOM</h1><h2 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h2><p>DOM(文档对象模型）是针对 HTML 和 XML 文档的一个 API（应用程序编程接口）</p>
+<h3 id="节点层次"><a href="#节点层次" class="headerlink" title="节点层次"></a>节点层次</h3><ol>
+<li>文档元素，文档的最外层元素，文档中的其他所有元素都包含在文档元素中。每个文档只能有一个文档元素。</li>
+</ol>
+<ul>
+<li>在 HTML 页面中，文档元素始终都是<html>元素。</html></li>
+<li>在 XML 中，没有预定义的元素，因此任何元素都可能成为文档元素</li>
+</ul>
+<ol start="2">
+<li><p>HTML中的标记可以通过节点来表示： HTML 元素通过元素节点表示，特性（attribute）通过特性节点表示，文档类型通过文档类型节点表示，而注释则通过注释节点表示<br>后面的内容在首页不显示，请点击下方的展开全文或者
+    
+    <a class="article-more-a" href="/2019/10/01/js高级程序设计第五部分/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">读书笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2019/10/01/js高级程序设计第五部分/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-js高级程序设计第四部分" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2019/10/01/js高级程序设计第四部分/" target="_blank">js高级程序设计第四部分</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2019/10/01/js高级程序设计第四部分/" class="archive-article-date">
+        <time datetime="2019-10-01T08:51:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-01</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="js高级程序设计：BOM、客户端检测"><a href="#js高级程序设计：BOM、客户端检测" class="headerlink" title="js高级程序设计：BOM、客户端检测"></a>js高级程序设计：BOM、客户端检测</h1><h2 id="BOM"><a href="#BOM" class="headerlink" title="BOM"></a>BOM</h2><h3 id="window对象"><a href="#window对象" class="headerlink" title="window对象"></a>window对象</h3><p>在浏览器中，window 对象有双重角色，它既是通过 JavaScript 访问浏览器窗口的一个接口，又是 ECMAScript 规定的 Global 对象</p>
+<h4 id="全局作用域"><a href="#全局作用域" class="headerlink" title="全局作用域"></a>全局作用域</h4><ol>
+<li>在全局作用域中声明的变量、函数都会变成 window 对象的属性和方法</li>
+<li>定义全局变量与在 window 对象上直接定义属性的差别：全局变量不能通过 delete 操作符删除，而直接在 window 对象上的定义的属性可以<br>后面的内容在首页不显示，请点击下方的展开全文或者
+    
+    <a class="article-more-a" href="/2019/10/01/js高级程序设计第四部分/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">读书笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2019/10/01/js高级程序设计第四部分/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-js高级程序设计第三部分" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2019/10/01/js高级程序设计第三部分/" target="_blank">js高级程序设计第三部分</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2019/10/01/js高级程序设计第三部分/" class="archive-article-date">
+        <time datetime="2019-10-01T08:48:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-01</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="js高级程序设计：面向对象、函数表达式"><a href="#js高级程序设计：面向对象、函数表达式" class="headerlink" title="js高级程序设计：面向对象、函数表达式"></a>js高级程序设计：面向对象、函数表达式</h1><h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><h3 id="理解对象"><a href="#理解对象" class="headerlink" title="理解对象"></a>理解对象</h3><ol>
+<li>对象定义为：“无序属性的集合，其属性可以包含基本值、对象或者函数”，相当于说对象是一组没有特定顺序的值，可以对象想象成散列表</li>
+<li>每个对象都是基于一个引用类型创建的，这个引用类型可以是第 5 章讨论的原生类型，也可以是开发人员定义的类型。<br>后面的内容在首页不显示，请点击下方的展开全文或者
+    
+    <a class="article-more-a" href="/2019/10/01/js高级程序设计第三部分/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">读书笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2019/10/01/js高级程序设计第三部分/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-js高级程序设计第二部分" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2019/10/01/js高级程序设计第二部分/" target="_blank">js高级程序设计第二部分</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2019/10/01/js高级程序设计第二部分/" class="archive-article-date">
+        <time datetime="2019-10-01T08:38:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-01</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="js高级程序设计：函数、变量、作用域、引用类型"><a href="#js高级程序设计：函数、变量、作用域、引用类型" class="headerlink" title="js高级程序设计：函数、变量、作用域、引用类型"></a>js高级程序设计：函数、变量、作用域、引用类型</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h4 id="基本知识"><a href="#基本知识" class="headerlink" title="基本知识"></a>基本知识</h4><ol>
+<li><p>语法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function functionName(arg0, arg1,...,argN) &#123; </span><br><span class="line"> statements </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>函数默认没有返回值，只有以通过return 语句后跟要返回的值来实现返回值，注意执行完 return 语句之后停止并立即退出。因此，函数体内位于 return 语句之后的任何代码都永远不会执行。<br>后面的内容在首页不显示，请点击下方的展开全文或者
+    
+    <a class="article-more-a" href="/2019/10/01/js高级程序设计第二部分/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">读书笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2019/10/01/js高级程序设计第二部分/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-js高级程序设计第一部分" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2019/10/01/js高级程序设计第一部分/" target="_blank">js高级程序设计第一部分</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2019/10/01/js高级程序设计第一部分/" class="archive-article-date">
+        <time datetime="2019-10-01T08:26:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-01</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+<ul>
+<li><a href="#js高级程序设计">js高级程序设计</a><ul>
+<li><a href="#在html里使用js">在HTML里使用js</a><ul>
+<li><a href="#script元素">script元素</a><ul>
+<li><a href="#标签的位置">标签的位置</a></li>
+</ul>
+</li>
+<li><a href="#嵌入代码和外部文件">嵌入代码和外部文件</a></li>
+<li><a href="#文档模式">文档模式</a></li>
+<li><a href="#noscript元素">noscript元素</a></li>
+</ul>
+</li>
+<li><a href="#基本概念">基本概念</a><ul>
+<li><a href="#语法">语法</a><ul>
+<li><a href="#区分大小写">区分大小写</a></li>
+<li><a href="#标识符指变量-函数-属性的名字或者函数的参数">标识符，指变量、函数、属性的名字或者函数的参数</a></li>
+<li><a href="#注释">注释</a></li>
+<li><a href="#严格模式">严格模式</a></li>
+<li><a href="#语句以分号为结尾">语句，以分号为结尾</a></li>
+</ul>
+</li>
+<li><a href="#关键字与保留字查表吧">关键字与保留字，查表吧</a></li>
+<li><a href="#变量">变量</a></li>
+<li><a href="#数据类型">数据类型</a><ul>
+<li><a href="#typeof操作符">typeof操作符</a></li>
+<li><a href="#undefined">undefined</a></li>
+<li><a href="#null">null</a></li>
+<li><a href="#boolean">boolean</a></li>
+<li><a href="#number">number</a></li>
+<li><a href="#string">string</a></li>
+<li><a href="#object">object</a></li>
+</ul>
+</li>
+<li><a href="#操作符">操作符</a><ul>
+<li><a href="#一元操作符">一元操作符</a></li>
+<li><a href="#位操作符先简单了解">位操作符，先简单了解</a></li>
+<li><a href="#布尔boolean">布尔Boolean</a></li>
+<li><a href="#">* / %</a></li>
+<li><a href="#-">+ -</a></li>
+<li><a href="#关系操作符">关系操作符&lt; &gt; &lt;= &gt;=</a></li>
+<li><a href="#相等操作符">相等操作符</a></li>
+<li><a href="#条件操作符三元运算符">条件操作符（三元运算符）</a></li>
+<li><a href="#赋值操作符把右侧的值赋给左侧的变量">赋值操作符=，把右侧的值赋给左侧的变量</a></li>
+<li><a href="#逗号操作符">逗号操作符</a></li>
+</ul>
+</li>
+<li><a href="#语句">语句</a><ul>
+<li><a href="#if语句">if语句</a></li>
+<li><a href="#do-while语句">do-while语句</a></li>
+<li><a href="#while语句">while语句</a></li>
+<li><a href="#for语句">for语句</a></li>
+<li><a href="#for-in语句">for-in语句</a></li>
+<li><a href="#label语句">label语句（？）</a></li>
+<li><a href="#break和continue语句">break和continue语句</a></li>
+<li><a href="#with语句">with语句</a></li>
+<li><a href="#switch语句">switch语句</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- /code_chunk_output -->
+<h1 id="js高级程序设计"><a href="#js高级程序设计" class="headerlink" title="js高级程序设计"></a>js高级程序设计</h1><h2 id="在HTML里使用js"><a href="#在HTML里使用js" class="headerlink" title="在HTML里使用js"></a>在HTML里使用js</h2><h3 id="script元素"><a href="#script元素" class="headerlink" title="script元素"></a>script元素</h3><h4 id="标签的位置"><a href="#标签的位置" class="headerlink" title="标签的位置"></a>标签的位置</h4><ol>
+<li>把script元素放在head元素中，必须等到全部js代码被下载，解析，执行完成之后才能开始呈现页面的内容，这样可能会导致浏览器在呈现页面时出现延迟，所有现在一般把script元素放在body里面，这样在解析js代码前页面的内容就可以呈现。</li>
+<li>script元素的defer属性，只适用于外部脚本，作用是让浏览器立即下载但延迟执行，即使将script元素放在head里面，脚本也会延迟到浏览器<br>后面的内容在首页不显示，请点击下方的展开全文或者
+    
+    <a class="article-more-a" href="/2019/10/01/js高级程序设计第一部分/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">读书笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2019/10/01/js高级程序设计第一部分/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-jsDOM编程艺术记录" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2019/10/01/jsDOM编程艺术记录/" target="_blank">jsDOM编程艺术记录</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2019/10/01/jsDOM编程艺术记录/" class="archive-article-date">
+        <time datetime="2019-10-01T08:24:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-01</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="jsDOM编程艺术"><a href="#jsDOM编程艺术" class="headerlink" title="jsDOM编程艺术"></a>jsDOM编程艺术</h1><h2 id="js语法"><a href="#js语法" class="headerlink" title="js语法"></a>js语法</h2><h3 id="语句"><a href="#语句" class="headerlink" title="语句"></a>语句</h3><h4 id="语句-1"><a href="#语句-1" class="headerlink" title="语句"></a>语句</h4><ol>
+<li><p>语句末尾加分号</p>
+</li>
+<li><p>每条语句独占一行</p>
+<h4 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h4></li>
+<li><p>单行注释</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//我是注释内容</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>多行注释</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/*我是注释内容</span><br><span class="line">我是注释内容*/</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>后面的内容在首页不显示，请点击下方的展开全文或者
+    
+    <a class="article-more-a" href="/2019/10/01/jsDOM编程艺术记录/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">读书笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2019/10/01/jsDOM编程艺术记录/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-学习随记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2019/10/01/学习随记/" target="_blank">学习随记</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2019/10/01/学习随记/" class="archive-article-date">
+        <time datetime="2019-10-01T07:36:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-01</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="从HTML到CSS到Javascript"><a href="#从HTML到CSS到Javascript" class="headerlink" title="从HTML到CSS到Javascript"></a>从HTML到CSS到Javascript</h1><h2 id="HTML与CSS"><a href="#HTML与CSS" class="headerlink" title="HTML与CSS"></a>HTML与CSS</h2><ol>
+<li>切图格式</li>
+</ol>
+<ul>
+<li>矩形图片切成jpg格式，图标是矩形时，也要切成jpg格式</li>
+<li>非矩形图片切成PNG格式</li>
+</ul>
+<ol start="2">
+<li>高度属性值设置为百分比时，仅限于父级元素不是body，而且还有宽度时生效<br> 宽度属性值为百分比在任意情况下都生效</li>
+<li>display:none 可以实现隐藏的效果</li>
+<li>浮动之后要记得清除浮动。清除浮动清除的是并列的元素的浮动<br>后面的内容在首页不显示，请点击下方的展开全文或者
+    
+    <a class="article-more-a" href="/2019/10/01/学习随记/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">记录</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2019/10/01/学习随记/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
 
   
     <article id="post-js中keyup-keypress-keydown以及oninput四个事件" class="article article-type-post  article-index" itemscope itemprop="blogPost">
@@ -236,33 +1163,10 @@
 <li>keydown事件：当用户按下键盘上的任意键时触发，而且如果按住不放的话，会重复触发此事件。</li>
 <li>keypress事件：当用户按下键盘上的字符键时触发，而且如果按住不放的话，会重复触发此事件。</li>
 <li>keyup事件：当用户释放键盘上的键时触发。</li>
-<li>oninput事件：在 &lt;input&gt; 或 &lt;textarea&gt; 元素的值发生改变时触发<h3 id="具体触发效果"><a href="#具体触发效果" class="headerlink" title="具体触发效果"></a>具体触发效果</h3><h4 id="测试代码"><a href="#测试代码" class="headerlink" title="测试代码"></a>测试代码</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">//测试keyup, keypress, keydown以及oninput四个事件的触发机制</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;wrapper&quot;&gt;</span><br><span class="line">    &lt;input id=&quot;input&quot; type=&quot;text&quot;&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">    var input = document.getElementById(&quot;input&quot;);</span><br><span class="line">    input.addEventListener(&quot;keyup&quot;,function()&#123;</span><br><span class="line">        console.log(&apos;event handle keyup&apos;);</span><br><span class="line">    &#125;);</span><br><span class="line">    input.addEventListener(&quot;keydown&quot;,function()&#123;</span><br><span class="line">        console.log(&apos;event handle keydown&apos;);</span><br><span class="line">    &#125;);</span><br><span class="line">    input.addEventListener(&quot;keypress&quot;,function()&#123;</span><br><span class="line">        console.log(&apos;event handle keypress&apos;);</span><br><span class="line">    &#125;);</span><br><span class="line">    input.addEventListener(&quot;input&quot;,function()&#123;</span><br><span class="line">        console.log(&apos;event handle input&apos;);</span><br><span class="line">    &#125;);</span><br><span class="line">			</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h4 id="效果（在英文输入法下，暂不考虑中文输入法下的情况）"><a href="#效果（在英文输入法下，暂不考虑中文输入法下的情况）" class="headerlink" title="效果（在英文输入法下，暂不考虑中文输入法下的情况）"></a>效果（在英文输入法下，暂不考虑中文输入法下的情况）</h4><ol>
-<li>当按下单个字符键时，依次触发keydown-keypress-input-keyup四个事件</li>
-<li>如果按回车键，依次触发keydown-keypress-keyup，注意没有触发input事件</li>
-<li>如果按非字符键如方向键、ESC键、f1-f12等，依次触发keydown–keyup， 注意没有keypress,input事件</li>
-<li>长按某一个键时：<ul>
-<li>如果是字符键，会一直触发 keydown-keypress-input，松手后触发keyup事件。</li>
-<li>如果是非字符键，会在按住的时候一直触发keydown事件，松手后触发keyup事件。</li>
-<li>如果是回车键，会一直循环触发keydown-keypress-keyup事件</li>
-</ul>
-</li>
-<li>按f5键，不触发所述四个事件</li>
-</ol>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><h3 id="字符键与非字符键"><a href="#字符键与非字符键" class="headerlink" title="字符键与非字符键"></a>字符键与非字符键</h3><ol>
-<li>字符键，所有按下后能在输入框有所显示的键<ul>
-<li>数字0-9</li>
-<li>字母a-zA-Z</li>
-<li>能显示出来的符号+-*/，。、·等等</li>
-</ul>
-</li>
-<li>非字符键：除字符键以外的键，例如F1-12、SHIFT、Alt、Ctrl、Insert、Home、PgUp、Delete、End、PgDn、ScrollLock、Pause、NumLock、{菜单键}、{开始键}和方向键等</li>
-</ol>
-<link rel="stylesheet" type="text/css" href="/css/auto-number-title.css">
-
+<li>oninput事件：在 &lt;input&gt; 或 &lt;textarea&gt; 元素的值发生改变时触发<br>后面的内容在首页不显示，请点击下方的展开全文或者
+    
+    <a class="article-more-a" href="/2019/09/29/js中keyup-keypress-keydown以及oninput四个事件/#more">more >></a>
+    
     
 
     
@@ -326,57 +1230,10 @@
 
 
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="welcome"><a href="#welcome" class="headerlink" title="welcome"></a>welcome</h1><h2 id="记录"><a href="#记录" class="headerlink" title="记录"></a>记录</h2><p>在搭建这个个人博客的过程中踩了很多的坑，出现了不少bug，硬着头皮一点一点查，一点一点改，慢慢的雏形就出来了。虽然还有很多地方没有完善，不过慢慢来吧。事情总会一步一步的完成的。<br><br></p>
-
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2019/09/28/hello-world/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 
 
@@ -481,7 +1338,7 @@
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友情链接</a></li>
       
         
       
@@ -515,6 +1372,14 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">读书笔记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">记录</a>
               </li>
             
             <div class="clearfix"></div>
@@ -566,15 +1431,6 @@
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="https://zhousiwei.gitee.io/ibooks/" target="_blank" class="search-title" title="记录工作和学习过程中的笔记：Java、前端开发、Hexo博客、聚合支付、Linux笔记、ElasticSearch、ELK日志分析">
-                
-                  <img src="https://zhousiwei.gitee.io/ibooks/favicon.ico">
-                
-                技术笔记
-              </a>
-            </li>
-          
-            <li class="search-li">
               <a href="https://github.com/FGstudy" target="_blank" class="search-title" >
                 
                   <i class="icon-link icon"></i>
@@ -584,25 +1440,7 @@
             </li>
           
             <li class="search-li">
-              <a href="https://gitee.com/zhousiwei" target="_blank" class="search-title" >
-                
-                  <i class="icon-link icon"></i>
-                
-                码云
-              </a>
-            </li>
-          
-            <li class="search-li">
-              <a href="https://www.jianshu.com/u/02cbf31a043a" target="_blank" class="search-title" >
-                
-                  <i class="icon-link icon"></i>
-                
-                简书
-              </a>
-            </li>
-          
-            <li class="search-li">
-              <a href="https://blog.csdn.net/qq_30930805" target="_blank" class="search-title" >
+              <a href="https://me.csdn.net/FGstudy" target="_blank" class="search-title" >
                 
                   <i class="icon-link icon"></i>
                 
@@ -619,7 +1457,7 @@
     	<section class="tools-section tools-section-me" q-show="aboutme">
         
           
-  	  		<div class="aboutme-wrap" id="aboutme">主要涉及技术：<br>HTML、CSS、JavaScript（前端三剑客）<br>菜鸟前端的漫漫学习路<br>请多指教，谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="aboutme">主要涉及技术：<br>HTML、CSS、JavaScript（前端三剑客）<br>菜鸟前端的漫漫学习路<br>请多指教</div>
   	  	
     	</section>
     

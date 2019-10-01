@@ -6,20 +6,34 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | FGstudy</title>
+  <title>js高级程序设计第六部分 | FGstudy</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="永无止境的学习">
-<meta property="og:type" content="website">
-<meta property="og:title" content="FGstudy">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="js高级程序设计：事件、表单操作事件事件就是用户或浏览器自身执行的某种动作。可以使用侦听器（或处理程序）来预订事件，以便事件发生时执行相应的代码 事件流，从页面中接收事件的顺序事件冒泡事件冒泡（event bubbling），即事件开始时由最具体的元素（文档中嵌套层次最深的那个节点）接收，然后逐级向上传播到较为不具体的节点（文档） 事件捕获事件捕获的思想是不太具体的节点应该更早接收到事件，而最具体">
+<meta name="keywords" content="读书笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js高级程序设计第六部分">
+<meta property="og:url" content="http://yoursite.com/2019/10/01/js高级程序设计第六部分/index.html">
 <meta property="og:site_name" content="FGstudy">
-<meta property="og:description" content="永无止境的学习">
+<meta property="og:description" content="js高级程序设计：事件、表单操作事件事件就是用户或浏览器自身执行的某种动作。可以使用侦听器（或处理程序）来预订事件，以便事件发生时执行相应的代码 事件流，从页面中接收事件的顺序事件冒泡事件冒泡（event bubbling），即事件开始时由最具体的元素（文档中嵌套层次最深的那个节点）接收，然后逐级向上传播到较为不具体的节点（文档） 事件捕获事件捕获的思想是不太具体的节点应该更早接收到事件，而最具体">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/2019/10/01/js高级程序设计第六部分/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1_files/18.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/10/01/js高级程序设计第六部分/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1_files/19.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/10/01/js高级程序设计第六部分/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1_files/20.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/10/01/js高级程序设计第六部分/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1_files/21.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/10/01/js高级程序设计第六部分/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1_files/22.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/10/01/js高级程序设计第六部分/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1_files/23.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/10/01/js高级程序设计第六部分/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1_files/24.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/10/01/js高级程序设计第六部分/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1_files/25.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/10/01/js高级程序设计第六部分/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1_files/26.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/10/01/js高级程序设计第六部分/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1_files/27.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/10/01/js高级程序设计第六部分/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1_files/28.jpg">
+<meta property="og:updated_time" content="2019-10-01T09:03:12.827Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="FGstudy">
-<meta name="twitter:description" content="永无止境的学习">
+<meta name="twitter:title" content="js高级程序设计第六部分">
+<meta name="twitter:description" content="js高级程序设计：事件、表单操作事件事件就是用户或浏览器自身执行的某种动作。可以使用侦听器（或处理程序）来预订事件，以便事件发生时执行相应的代码 事件流，从页面中接收事件的顺序事件冒泡事件冒泡（event bubbling），即事件开始时由最具体的元素（文档中嵌套层次最深的那个节点）接收，然后逐级向上传播到较为不具体的节点（文档） 事件捕获事件捕获的思想是不太具体的节点应该更早接收到事件，而最具体">
+<meta name="twitter:image" content="http://yoursite.com/2019/10/01/js高级程序设计第六部分/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1_files/18.jpg">
   
     <link rel="alternative" href="/atom.xml" title="FGstudy" type="application/atom+xml">
   
@@ -197,84 +211,768 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-js高级程序设计第六部分" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/10/01/js高级程序设计第七部分/" class="archive-article-date">
-        <time datetime="2019-10-01T08:58:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-01</time>
-</a>
-
-        </div>
-    	 
+      <header class="article-header">
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2019/10/01/js高级程序设计第七部分/" target="_blank">js高级程序设计第七部分</a>
   
+    <h1 class="article-title" itemprop="name">
+      js高级程序设计第六部分
     </h1>
   
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">读书笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
 <a href="/2019/10/01/js高级程序设计第六部分/" class="archive-article-date">
         <time datetime="2019-10-01T08:54:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-01</time>
 </a>
 
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">12k字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">46分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="js高级程序设计：事件、表单操作"><a href="#js高级程序设计：事件、表单操作" class="headerlink" title="js高级程序设计：事件、表单操作"></a>js高级程序设计：事件、表单操作</h1><h2 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h2><p>事件就是用户或浏览器自身执行的某种动作。可以使用侦听器（或处理程序）来预订事件，以便事件发生时执行相应的代码</p>
+<h3 id="事件流，从页面中接收事件的顺序"><a href="#事件流，从页面中接收事件的顺序" class="headerlink" title="事件流，从页面中接收事件的顺序"></a>事件流，从页面中接收事件的顺序</h3><h4 id="事件冒泡"><a href="#事件冒泡" class="headerlink" title="事件冒泡"></a>事件冒泡</h4><p>事件冒泡（event bubbling），即事件开始时由最具体的元素（文档中嵌套层次最深的那个节点）接收，然后逐级向上传播到较为不具体的节点（文档）</p>
+<h4 id="事件捕获"><a href="#事件捕获" class="headerlink" title="事件捕获"></a>事件捕获</h4><p>事件捕获的思想是不太具体的节点应该更早接收到事件，而最具体的节点应该最后接收到事件。事件捕获的用意在于在事件到达预定目标之前捕获它<br>后面的内容在首页不显示，请点击下方的展开全文或者<a id="more"></a></p>
+<h4 id="DOM事件流"><a href="#DOM事件流" class="headerlink" title="DOM事件流"></a>DOM事件流</h4><ol>
+<li><p>“DOM2级事件”规定的事件流包括三个阶段：事件捕获阶段、处于目标阶段和事件冒泡阶段</p>
+</li>
+<li><p>首先发生的是事件捕获，为截获事件提供了机会。然后是实际的目标接收到事件。最后一个阶段是冒泡阶段，可以在这个阶段对事件做出响应<img src="JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1_files/18.jpg" alt></p>
+</li>
+<li><p>即使“DOM2 级事件”规范明确要求捕获阶段不会涉及事件目标，但大部分高级浏览器都会在捕获阶段触发事件对象上的事件。结果，就是有两个机会在目标对象上面操作事件。</p>
+<h3 id="事件处理程序"><a href="#事件处理程序" class="headerlink" title="事件处理程序"></a>事件处理程序</h3><p>响应某个事件的函数就叫做事件处理程序或事件侦听器，一般事件处理程序的名字以”on”开头，如onclick,onload等</p>
+<h4 id="HTML事件处理程序，不常用"><a href="#HTML事件处理程序，不常用" class="headerlink" title="HTML事件处理程序，不常用"></a>HTML事件处理程序，不常用</h4><p>写在HTML代码里的</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&quot;button&quot; value=&quot;Click Me&quot; onclick=&quot;alert(&apos;Clicked&apos;)&quot; /&gt;</span><br><span class="line">&lt;input type=&quot;button&quot; value=&quot;Click Me&quot; onclick=&quot;showMessage()&quot; /&gt;</span><br><span class="line">&lt;input type=&quot;button&quot; value=&quot;Click Me&quot; onclick=&quot;alert(this.value)&quot;&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>特别之处：这样会创建一个封装着元素属性值的函数。这个函数中有一个局部变量 event，也就是事件对象，通过 event 变量，可以直接访问事件对象，并且在这个函数内部，this 值等于事件的目标元素</p>
+</li>
+<li><p>缺点：</p>
+</li>
+</ol>
+<ul>
+<li><p>存在一个时差问题。</p>
+<ul>
+<li>因为用户可能会在HTML 元素一出现在页面上就触发相应的事件，但当时的事件处理程序有可能尚不具备执行条件</li>
+<li>解决:很多 HTML 事件处理程序都会被封装在一个 try-catch 块中，以便错误不会浮出水面<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&quot;button&quot; value=&quot;Click Me&quot; onclick=&quot;try&#123;showMessage();&#125;catch(ex)&#123;&#125;&quot;&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>这样扩展事件处理程序的作用域链在不同浏览器中会导致不同结果</p>
+</li>
+<li><p>HTML 与 JavaScript 代码紧密耦合</p>
+<h4 id="DOM0-级事件处理程序"><a href="#DOM0-级事件处理程序" class="headerlink" title="DOM0 级事件处理程序"></a>DOM0 级事件处理程序</h4><p>在js代码域里写，把函数赋值给一个事件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var btn = document.getElementById(&quot;myBtn&quot;); </span><br><span class="line">btn.onclick = function()&#123; </span><br><span class="line"> alert(&quot;Clicked&quot;); </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ol>
+<li>使用 DOM0 级方法指定的事件处理程序被认为是元素的方法。因此，这时候的事件处理程序是在元素的作用域中运行；换句话说，程序中的 this 引用当前元素</li>
+<li>以这种方式添加的事件处理程序会在事件流的冒泡阶段被处理</li>
+<li>删除通过 DOM0 级方法指定的事件处理程序<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">btn.onclick = null; //删除事件处理程序</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h4 id="DOM2-级事件处理程序"><a href="#DOM2-级事件处理程序" class="headerlink" title="DOM2 级事件处理程序"></a>DOM2 级事件处理程序</h4><p>使用addEventListener()和 removeEventListener()</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var btn = document.getElementById(&quot;myBtn&quot;); </span><br><span class="line">btn.addEventListener(&quot;click&quot;, function()&#123; //注意不是onclick</span><br><span class="line"> alert(this.id); </span><br><span class="line">&#125;, false);</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p>所有 DOM 节点中都包含这两个方法，并且它们都接受 3 个参数：要处理的事件名、作为事件处理程序的函数和一个布尔值。最后这个布尔值参数如果是 true，表示在捕获阶段调用事件处理程序；如果是 false，表示在冒泡阶段调用事件处理程序。</p>
+</li>
+<li><p>使用 DOM2 级方法添加事件处理程序的主要好处是可以添加多个事件处理程序</p>
+</li>
+<li><p>通过 addEventListener()添加的事件处理程序只能使用 removeEventListener()来移除；移除时传入的参数与添加处理程序时使用的参数相同</p>
+</li>
+<li><p>注意：通过 addEventListener()添加的匿名函数将无法移除，因为匿名函数无法存在相同的函数</p>
+<h4 id="IE事件处理程序"><a href="#IE事件处理程序" class="headerlink" title="IE事件处理程序"></a>IE事件处理程序</h4><p>attachEvent()和 detachEvent()</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var btn = document.getElementById(&quot;myBtn&quot;); </span><br><span class="line">btn.attachEvent(&quot;onclick&quot;, function()&#123; </span><br><span class="line"> alert(&quot;Clicked&quot;); </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>这两个方法接受相同的两个参数：事件处理程序名称与事件处理程序函数，</p>
+</li>
+<li><p>通过attachEvent()添加的事件处理程序都会被添加到冒泡阶段</p>
+</li>
+<li><p>与DOM0级方法的区别：事件处理程序的作用域不同</p>
+</li>
+</ol>
+<ul>
+<li>DOM0 级方法的情况下，事件处理程序会在其所属元素的作用域内运行</li>
+<li>attachEvent()方法的情况下，事件处理程序会在全局作用域中运行，因此 this 等于 window。</li>
+</ul>
+<ol start="4">
+<li>使用attachEvent()，为同一个按钮添加了多个不同的事件处理程序，程序以相反的顺序被触发。</li>
+<li>使用 attachEvent()添加的事件可以通过 detachEvent()来移除，条件是必须提供相同的参数。与 DOM 方法一样，这也意味着添加的匿名函数将不能被移除<h4 id="跨浏览器的事件处理程序"><a href="#跨浏览器的事件处理程序" class="headerlink" title="跨浏览器的事件处理程序"></a>跨浏览器的事件处理程序</h4></li>
+<li>要保证处理事件的代码能在大多数浏览器下一致地运行，只需关注冒泡阶段</li>
+<li>addHandler()，它的职责是视情况分别使用 DOM0 级方法、DOM2 级方法或 IE 方法来添加事件。这个方法属于一个名叫 EventUtil 的对象，使用这个对象来处理浏览器间的差异。addHandler()方法接受 3 个参数：要操作的元素、事件名称和事件处理程序函数。</li>
+<li>removeHandler()，接受与addHandler()相同的参数。这个方法的职责是移除之前添加的事件处理程序——无论该事件处理程序是采取什么方式添加到元素中的，如果其他方法无效，默认采用 DOM0 级方法<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">var EventUtil = &#123; </span><br><span class="line"> addHandler: function(element, type, handler)&#123; </span><br><span class="line"> if (element.addEventListener)&#123; </span><br><span class="line"> element.addEventListener(type, handler, false); </span><br><span class="line"> &#125; else if (element.attachEvent)&#123; </span><br><span class="line"> element.attachEvent(&quot;on&quot; + type, handler); </span><br><span class="line"> &#125; else &#123; </span><br><span class="line"> element[&quot;on&quot; + type] = handler; </span><br><span class="line"> &#125; </span><br><span class="line"> &#125;, </span><br><span class="line"> removeHandler: function(element, type, handler)&#123; </span><br><span class="line"> if (element.removeEventListener)&#123; </span><br><span class="line"> element.removeEventListener(type, handler, false); </span><br><span class="line"> &#125; else if (element.detachEvent)&#123; </span><br><span class="line"> element.detachEvent(&quot;on&quot; + type, handler); </span><br><span class="line"> &#125; else &#123; </span><br><span class="line"> element[&quot;on&quot; + type] = null; </span><br><span class="line"> &#125; </span><br><span class="line"> &#125; </span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">var btn = document.getElementById(&quot;myBtn&quot;); </span><br><span class="line">var handler = function()&#123; </span><br><span class="line"> alert(&quot;Clicked&quot;); </span><br><span class="line">&#125;; </span><br><span class="line">EventUtil.addHandler(btn, &quot;click&quot;, handler);</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="事件对象"><a href="#事件对象" class="headerlink" title="事件对象"></a>事件对象</h3><p>在触发 DOM 上的某个事件时，会产生一个事件对象 event，这个对象中包含着所有与事件有关的信息。包括导致事件的元素、事件的类型以及其他与特定事件相关的信息。只有在事件处理程序执行期间，event 对象才会存在</p>
+<h4 id="DOM中的事件对象"><a href="#DOM中的事件对象" class="headerlink" title="DOM中的事件对象"></a>DOM中的事件对象</h4><ol>
+<li><p>兼容 DOM 的浏览器会将一个 event 对象传入到事件处理程序中，无论是用DOM0 级或 DOM2 级</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var btn = document.getElementById(&quot;myBtn&quot;); </span><br><span class="line">btn.onclick = function(event)&#123; </span><br><span class="line"> alert(event.type); //&quot;click&quot; </span><br><span class="line">&#125;; </span><br><span class="line">btn.addEventListener(&quot;click&quot;, function(event)&#123; </span><br><span class="line"> alert(event.type); //&quot;click&quot; </span><br><span class="line">&#125;, false);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>event 对象属性<img src="JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1_files/19.jpg" alt>)<img src="JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1_files/20.jpg" alt></p>
+</li>
+<li><p>在事件处理程序内部，对象 this 始终等于 currentTarget 的值，而 target 则只包含事件的实际目标。如果直接将事件处理程序指定给了目标元素，则 this、currentTarget 和 target 包含相同的值。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var btn = document.getElementById(&quot;myBtn&quot;); </span><br><span class="line">btn.onclick = function(event)&#123; </span><br><span class="line"> alert(event.currentTarget === this); //true </span><br><span class="line"> alert(event.target === this); //true </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在需要通过一个函数处理多个事件时，可以使用 type 属性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">var btn = document.getElementById(&quot;myBtn&quot;); </span><br><span class="line">var handler = function(event)&#123;</span><br><span class="line">switch(event.type)&#123; </span><br><span class="line"> case &quot;click&quot;: </span><br><span class="line"> alert(&quot;Clicked&quot;); </span><br><span class="line"> break; </span><br><span class="line"> case &quot;mouseover&quot;: </span><br><span class="line"> event.target.style.backgroundColor = &quot;red&quot;; </span><br><span class="line"> break; </span><br><span class="line"> case &quot;mouseout&quot;: </span><br><span class="line"> event.target.style.backgroundColor = &quot;&quot;; </span><br><span class="line"> break; </span><br><span class="line"> &#125; </span><br><span class="line">&#125;; </span><br><span class="line">btn.onclick = handler; </span><br><span class="line">btn.onmouseover = handler; </span><br><span class="line">btn.onmouseout = handler;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>要阻止特定事件的默认行为，可以使用 preventDefault()方法，注意只有 cancelable 属性设置为 true 的事件，才可以使用 preventDefault()来取消其默认行为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//阻止链接导航</span><br><span class="line">var link = document.getElementById(&quot;myLink&quot;); </span><br><span class="line">link.onclick = function(event)&#123; </span><br><span class="line"> event.preventDefault(); </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>stopPropagation()方法用于立即停止事件在 DOM 层次中的传播，即取消进一步的事件捕获或冒泡</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//避免触发注册在 document.body 上面的事件处理程序</span><br><span class="line">var btn = document.getElementById(&quot;myBtn&quot;); </span><br><span class="line">btn.onclick = function(event)&#123; </span><br><span class="line"> alert(&quot;Clicked&quot;); </span><br><span class="line"> event.stopPropagation(); </span><br><span class="line">&#125;; </span><br><span class="line">document.body.onclick = function(event)&#123; </span><br><span class="line"> alert(&quot;Body clicked&quot;); </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>eventPhase 属性，可以用来确定事件当前正位于事件流的哪个阶段。如果是在捕获阶段调用的事件处理程序，那么 eventPhase 等于 1；如果事件处理程序处于目标对象上，则 eventPhase 等于 2；如果是在冒泡阶段调用的事件处理程序，eventPhase 等于 3</p>
+</li>
+<li><p>在HTML里面指定的事件处理程序，那么还可以通过一个名叫event的变量来访问event对象</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&quot;button&quot; value=&quot;Click Me&quot; onclick=&quot;alert(event.type)&quot;&gt;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h4 id="IE中的事件对象"><a href="#IE中的事件对象" class="headerlink" title="IE中的事件对象"></a>IE中的事件对象</h4><ol>
+<li><p>在使用 DOM0 级方法添加事件处理程序时，event 对象作为 window 对象的一个属性存在</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var btn = document.getElementById(&quot;myBtn&quot;); </span><br><span class="line">btn.onclick = function()&#123; </span><br><span class="line"> var event = window.event; </span><br><span class="line"> alert(event.type); //&quot;click&quot; </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用 attachEvent()添加的，那么就会有一个 event 对象作为参数被传入事件处理程序函数中</p>
+</li>
+<li><p>在HTML里面指定的事件处理程序，那么还可以通过一个名叫event的变量来访问event对象</p>
+</li>
+<li><p>IE 的 event 对象的属性或方法<img src="JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1_files/21.jpg" alt></p>
+</li>
+<li><p>因为事件处理程序的作用域是根据指定它的方式来确定的，所以不能认为 this 会始终等于事件目标。故而，最好还是使用 event.srcElement 比较保险</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var btn = document.getElementById(&quot;myBtn&quot;); </span><br><span class="line">btn.onclick = function()&#123; </span><br><span class="line"> alert(window.event.srcElement === this); //true </span><br><span class="line">&#125;; </span><br><span class="line">btn.attachEvent(&quot;onclick&quot;, function(event)&#123; </span><br><span class="line"> alert(event.srcElement === this); //false </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>returnValue 属性相当于 DOM 中的 preventDefault()方法，它们的作用都是取消给定事件的默认行为。只要将 returnValue 设置为 false，就可以阻止默认行为</p>
+</li>
+<li><p>，cancelBubble 属性是用来停止事件冒泡的(IE 不支持事件捕获)</p>
+<h4 id="跨浏览器的事件对象，P378"><a href="#跨浏览器的事件对象，P378" class="headerlink" title="跨浏览器的事件对象，P378"></a>跨浏览器的事件对象，P378</h4><h3 id="事件类型"><a href="#事件类型" class="headerlink" title="事件类型"></a>事件类型</h3><h4 id="UI事件"><a href="#UI事件" class="headerlink" title="UI事件"></a>UI事件</h4></li>
+<li><p>UI 事件指的是那些不一定与用户操作有关的事件</p>
+</li>
+</ol>
+<ul>
+<li>load：当页面完全加载后在 window 上面触发，当所有框架都加载完毕时在框架集上面触发，当图像加载完毕时在<img>元素上面触发，或者当嵌入的内容加载完毕时在<object>元素上面触发。</object></li>
+<li>unload：当页面完全卸载后在 window 上面触发，当所有框架都卸载后在框架集上面触发，或者当嵌入的内容卸载完毕后在<object>元素上面触发。</object></li>
+<li>abort：在用户停止下载过程时，如果嵌入的内容没有加载完，则在<object>元素上面触发。</object></li>
+<li>error：当发生 JavaScript 错误时在 window 上面触发，当无法加载图像时在<img>元素上面触发，当无法加载嵌入内容时在<object>元素上面触发，或者当有一或多个框架无法加载时在框架集上面触发</object></li>
+<li>select：当用户选择文本框（<input>或<texterea>）中的一或多个字符时触发</texterea></li>
+<li>resize：当窗口或框架的大小变化时在 window 或框架上面触发</li>
+<li>scroll：当用户滚动带滚动条的元素中的内容时，在该元素上面触发。<body>元素中包含所加载页面的滚动条。</body></li>
+</ul>
+<ol start="2">
+<li><p>这些事件在 DOM2 级事件中都归为 HTML 事件，确定浏览器是否支持</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//要确定浏览器是否支持 DOM2 级事件规定的 HTML 事件，true为支持</span><br><span class="line">var isSupported = document.implementation.hasFeature(&quot;HTMLEvents&quot;, &quot;2.0&quot;);</span><br><span class="line">//确定浏览器是否支持“DOM3 级事件”定义的事件</span><br><span class="line">var isSupported = document.implementation.hasFeature(&quot;UIEvent&quot;, &quot;3.0&quot;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>load事件，当页面完全加载后（包括所有图像、JavaScript 文件、CSS 文件等外部资源），就会触发 window 上面的 load 事件</p>
+</li>
+</ol>
+<ul>
+<li><p>定义 onload 事件处理程序的方式：</p>
+<ul>
+<li><p>使用js代码，推荐这个</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//EventUtil在前面定义的可以跨浏览器的对象</span><br><span class="line">EventUtil.addHandler(window, &quot;load&quot;, function(event)&#123; </span><br><span class="line"> alert(&quot;Loaded!&quot;); </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>为<body>元素添加一个 onload 特性</body></p>
+</li>
+</ul>
+</li>
+<li><p>图像上面也可以触发 load 事件</p>
+</li>
+<li><p>在高版本浏览器中，script元素也会触发 load 事件，以便开发人员确定动态加载的 JavaScript 文件是否加载完毕，只有在设置了script元素的 src 属性并将该元素添加到文档后，才会开始下载 JavaScript 文件</p>
+</li>
+</ul>
+<ol start="4">
+<li>unload 事件在文档被完全卸载后（用户从一个页面切换到另一个页面）触发，</li>
+</ol>
+<ul>
+<li><p>用处：清除引用，以避免内存泄漏</p>
+</li>
+<li><p>定义方式</p>
+<ul>
+<li><p>用js代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//此时生成的 event 对象在兼容 DOM 的浏览器中只包含 target 属性（值为 document）</span><br><span class="line">EventUtil.addHandler(window, &quot;unload&quot;, function(event)&#123; </span><br><span class="line"> alert(&quot;Unloaded&quot;); </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><body>元素添加一个特性</body></li>
+</ul>
+</li>
+</ul>
+<ol start="5">
+<li>resize 事件</li>
+</ol>
+<ul>
+<li>当浏览器窗口被调整到一个新的高度或宽度时，就会触发 resize 事件,这个事件在 window（窗口）上面触发，因此可以通过 JavaScript 或者<body>元素中的 onresize 特性来指定事件处理程序<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">EventUtil.addHandler(window, &quot;resize&quot;, function(event)&#123; </span><br><span class="line"> alert(&quot;Resized&quot;); </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</body></li>
+</ul>
+<ol start="6">
+<li>scroll 事件</li>
+</ol>
+<ul>
+<li>在混杂模式下，可以通过<body>元素的 scrollLeft 和 scrollTop 来监控到这一变化；</body></li>
+<li>在标准模式下，除 Safari 之外的所有浏览器都会通过<html>元素来反映这一变化（Safari 仍然基于<body>跟踪滚动位置<h4 id="焦点事件，不冒泡"><a href="#焦点事件，不冒泡" class="headerlink" title="焦点事件，不冒泡"></a>焦点事件，不冒泡</h4></body></html></li>
+</ul>
+<ol>
+<li>焦点事件会在页面元素获得或失去焦点时触发，利用这些事件并与 document.hasFocus()方法及document.activeElement 属性配合，可以知晓用户在页面上的行踪</li>
+<li>有4个焦点事件</li>
+</ol>
+<ul>
+<li>blur：在元素失去焦点时触发。这个事件不会冒泡；所有浏览器都支持它。</li>
+<li>focus：在元素获得焦点时触发。这个事件不会冒泡；所有浏览器都支持它。</li>
+<li>focusin：在元素获得焦点时触发。这个事件与 HTML 事件 focus 等价，但它冒泡。支持这个事件的浏览器有 IE5.5+、Safari 5.1+、Opera 11.5+和 Chrome。  </li>
+<li>focusout：在元素失去焦点时触发。这个事件是 HTML 事件 blur 的通用版本。支持这个事件的浏览器有 IE5.5+、Safari 5.1+、Opera 11.5+和 Chrome。</li>
+</ul>
+<ol start="3">
+<li>当焦点从页面中的一个元素移动到另一个元素，会依次触发下列事件：</li>
+</ol>
+<ul>
+<li>focusout 在失去焦点的元素上触发；</li>
+<li>focusin 在获得焦点的元素上触发；</li>
+<li>blur 在失去焦点的元素上触发；</li>
+<li>focus 在获得焦点的元素上触发；</li>
+</ul>
+<ol start="4">
+<li>要确定浏览器是否支持这些事件，可以使用如下代码：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var isSupported = document.implementation.hasFeature(&quot;FocusEvent&quot;, &quot;3.0&quot;);</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h4 id="鼠标与滚轮事件"><a href="#鼠标与滚轮事件" class="headerlink" title="鼠标与滚轮事件"></a>鼠标与滚轮事件</h4><ol>
+<li>主要的鼠标事件</li>
+</ol>
+<ul>
+<li>click：在用户单击主鼠标按钮（一般是左边的按钮）或者按下回车键时触发。这一点对确保易访问性很重要，意味着 onclick 事件处理程序既可以通过键盘也可以通过鼠标执行。</li>
+<li>dblclick：在用户双击主鼠标按钮（一般是左边的按钮）时触发</li>
+<li>mousedown：在用户按下了任意鼠标按钮时触发。</li>
+<li>mouseenter：在鼠标光标从元素外部首次移动到元素范围之内时触发。这个事件不冒泡，而且在光标移动到后代元素上不会触发</li>
+<li>mouseleave：在位于元素上方的鼠标光标移动到元素范围之外时触发。这个事件不冒泡，而且在光标移动到后代元素上不会触发</li>
+<li>mousemove：当鼠标指针在元素内部移动时重复地触发。</li>
+<li>mouseout：在鼠标指针位于一个元素上方，然后用户将其移入另一个元素时在原元素上触发</li>
+<li>mouseover：在鼠标指针位于一个元素外部，然后用户将其首次移入另一个元素边界之内时在新元素上触发。</li>
+<li>mouseup：在用户释放鼠标按钮时触发。不能通过键盘触发这个事件</li>
+</ul>
+<ol start="2">
+<li>事件关系</li>
+</ol>
+<ul>
+<li>只有在同一个元素上相继触发 mousedown 和 mouseup 事件，才会触发 click 事件</li>
+<li>只有触发两次 click 事件，才会触发一次 dblclick 事件</li>
+<li>一次dblclick 事件触发的顺序：mousedown–mouseup–click–mousedown–mouseup–click–dbclick</li>
+</ul>
+<ol start="3">
+<li><p>检测浏览器是否支持</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//DOM2级</span><br><span class="line">var isSupported = document.implementation.hasFeature(&quot;MouseEvents&quot;, &quot;2.0&quot;);</span><br><span class="line">//DOM3级</span><br><span class="line">var isSupported = document.implementation.hasFeature(&quot;MouseEvent&quot;, &quot;3.0&quot;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>客户区坐标位置<br>鼠标事件发生时鼠标指针在视口中的水平和垂直坐标为事件对象的 clientX 和clientY 属性</p>
+</li>
+<li><p>页面坐标位置<br>页面坐标通过事件对象的 pageX 和pageY 属性，能告诉你事件是在页面中的什么位置发生的<br>在页面没有滚动的情况下，pageX 和 pageY 的值与 clientX 和 clientY 的值相等。</p>
+</li>
+<li><p>屏幕坐标位置<br>通过 screenX 和 screenY 属性就可以确定鼠标事件发生时鼠标指针相对于整个屏幕的坐标信息</p>
+</li>
+<li><p>修改键<br>Shift、Ctrl、Alt 和 Meta（在 Windows 键盘中是 Windows 键，在苹果机中是 Cmd 键）被用来修改鼠标事件的行为</p>
+</li>
+<li><p>相关元素</p>
+</li>
+</ol>
+<ul>
+<li>对 mouseover 事件而言，事件的主目标是获得光标的元素，而相关元素就是那个失去光标的元素。</li>
+<li>对 mouseout 事件而言，事件的主目标是失去光标的元素，而相关元素则是获得光标的元素</li>
+<li>DOM 通过 event 对象的 relatedTarget 属性提供了相关元素的信息。这个属性只对于 mouseover和mouseout事件才包含值；对于其他事件，这个属性的值是null</li>
+</ul>
+<ol start="9">
+<li>鼠标按钮</li>
+</ol>
+<ul>
+<li>对于 mousedown 和 mouseup 事件来说，则在其 event 对象存在一个 button 属性，表示按下或释放的按钮。</li>
+<li>DOM 的 button 属性可能有如下 3 个值：0 表示主鼠标按钮，1 表示中间的鼠标按钮（鼠标滚轮按钮），2 表示次鼠标按钮</li>
+</ul>
+<ol start="10">
+<li>更多事件信息</li>
+</ol>
+<ul>
+<li>event 对象中还提供了 detail 属性，用于给出有关事件的更多信息</li>
+<li>对于鼠标事件来说，detail 中包含了一个数值，表示在给定位置上发生了多少次单击，鼠标移动后数字清零</li>
+</ul>
+<ol start="11">
+<li>鼠标滚轮事件<br>当用户通过鼠标滚轮与页面交互、在垂直方向上滚动页面时（无论向上还是向下），就会触发 mousewheel<br>事件。这个事件可以在任何元素上面触发，最终会冒泡到 document（IE8）或 window（IE9、Opera、Chrome 及 Safari）对象</li>
+<li>触摸设备，移动端<br>注意几点：</li>
+</ol>
+<ul>
+<li>不支持 dblclick 事件。双击浏览器窗口会放大画面，而且没有办法改变该行为。</li>
+<li>轻击可单击元素会触发 mousemove 事件。如果此操作会导致内容变化，将不再有其他事件发生；如果屏幕没有因此变化，那么会依次发生 mousedown、mouseup 和 click 事件。轻击不可单击的元素不会触发任何事件。可单击的元素是指那些单击可产生默认操作的元素（如链接），或者那些已经被指定了 onclick 事件处理程序的元素。</li>
+<li>mousemove 事件也会触发 mouseover 和 mouseout 事件。</li>
+<li>两个手指放在屏幕上且页面随手指移动而滚动时会触发 mousewheel 和 scroll 事件。</li>
+</ul>
+<ol start="13">
+<li>无障碍性问题，使用屏幕阅读器的</li>
+</ol>
+<ul>
+<li>使用 click 事件执行代码。有人指出通过 onmousedown 执行代码会让人觉得速度更快，对视力正常的人来说这是没错的。但是，在屏幕阅读器中，由于无法触发 mousedown 事件，结果就会造成代码无法执行。</li>
+<li>不要使用 onmouseover 向用户显示新的选项。原因同上，屏幕阅读器无法触发这个事件。如果确实非要通过这种方式来显示新选项，可以考虑添加显示相同信息的键盘快捷方式。</li>
+<li>不要使用 dblclick 执行重要的操作。键盘无法触发这个事件。<h4 id="键盘与文本事件"><a href="#键盘与文本事件" class="headerlink" title="键盘与文本事件"></a>键盘与文本事件</h4></li>
+</ul>
+<ol>
+<li>3个键盘事件</li>
+</ol>
+<ul>
+<li>keydown：当用户按下键盘上的任意键时触发，而且如果按住不放的话，会重复触发此事件。</li>
+<li>keypress：当用户按下键盘上的字符键时触发，而且如果按住不放的话，会重复触发此事件。按下 Esc 键也会触发这个事件。Safari 3.1 之前的版本也会在用户按下非字符键时触发 keypress事件。</li>
+<li>keyup：当用户释放键盘上的键时触发</li>
+<li>触发顺序1：在用户按了一下键盘上的字符键时，首先会触发 keydown 事件，然后紧跟着是 keypress 事件，最后会触发 keyup 事件。<ul>
+<li>其中，keydown 和 keypress 都是在文本框发生变化之前被触发的；</li>
+<li>而 keyup事件则是在文本框已经发生变化之后被触发的。</li>
+<li>如果用户按下了一个字符键不放，就会重复触发keydown 和 keypress 事件，直到用户松开该键为止。</li>
+</ul>
+</li>
+<li>触发顺序2：如果用户按下的是一个非字符键，那么首先会触发 keydown 事件，然后就是 keyup 事件。<ul>
+<li>如果按住这个非字符键不放，那么就会一直重复触发 keydown 事件，直到用户松开这个键，此时会触发 keyup事件。</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>1个文本事件：textInput，在文本插入文本框之前会触发 textInput 事件</li>
+<li>键码</li>
+</ol>
+<ul>
+<li>在发生 keydown 和 keyup 事件时，event 对象的 keyCode 属性中会包含一个代码，与键盘上一个特定的键对应</li>
+<li>键码表<img src="JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1_files/22.jpg" alt="键码表1">)<img src="JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1_files/23.jpg" alt="键码表2"></li>
+<li>字符编码–对应字符的ASCII 编码</li>
+</ul>
+<ol start="4">
+<li>DOM3变化</li>
+</ol>
+<ul>
+<li>DOM3级事件中的键盘事件，包含两个新属性：key 和 char。兼容性不好，不推荐</li>
+</ul>
+<ol start="5">
+<li>textInput 事件，当用户在可编辑区域中输入实际字符时，就会触发这个事件，它的event 对象中还包含一个 data 属性，这个属性的值就是用户输入的字符（而非字符编码）。<h4 id="复合事件"><a href="#复合事件" class="headerlink" title="复合事件"></a>复合事件</h4>复合事件，用于处理 IME 的输入序列。IME（Input Method Editor，输入法编辑器）可以让用户输入在物理键盘上找不到的字符<h4 id="变动事件"><a href="#变动事件" class="headerlink" title="变动事件"></a>变动事件</h4><h4 id="HTML5事件"><a href="#HTML5事件" class="headerlink" title="HTML5事件"></a>HTML5事件</h4></li>
+<li>contextmenu 事件表示何时应该显示上下文菜单，以便开发人员取消默认的上下文菜单而提供自定义的菜单</li>
+<li>beforeunload 事件，会在浏览器卸载页面之前触发，可以通过它来取消卸载并继续使用原有页面。这个事件的意图是将控制权交给用户。显示的消息会告知用户页面行将被卸载（正因为如此才会显示这个消息），询问用户是否真的要关闭页面，还是希望继续留下来</li>
+<li>DOMContentLoaded 事件在形成完整的 DOM 树之后就会触发，不理会图像、JavaScript 文件、CSS 文件或其他资源是否已经下载完毕</li>
+<li>readystatechange 事件，提供与文档或元素的加载状态有关的信息</li>
+<li>pageshow 和 pagehide 事件</li>
+</ol>
+<ul>
+<li>Firefox 和 Opera 有一个特性，名叫“往返缓存”（back-forward cache，或 bfcache），可以在用户使用浏览器的“后退”和“前进”按钮时加快页面的转换速度。这个缓存中不仅保存着页面数据，还保存了 DOM 和 JavaScript 的状态</li>
+<li>pageshow这个事件在页面显示时触发，无论该页面是否来自 bfcache</li>
+<li>是 pagehide 事件，该事件会在浏览器卸载页面的时候触发，而且是在unload 事件之前触发</li>
+</ul>
+<ol start="6">
+<li>hashchange 事件</li>
+</ol>
+<ul>
+<li>用处：在 URL 的参数列表（及 URL 中“#”号后面的所有字符串）发生变化时通知开发人员。之所以新增这个事件，是因为在 Ajax 应用中，开发人员经常要利用 URL 参数列表来保存状态或导航信息</li>
+<li>必须要把 hashchange 事件处理程序添加给 window 对象，然后 URL 参数列表只要变化就会调用它。此时的 event 对象应该额外包含两个属性：oldURL 和 newURL。这两个属性分别保存着参数列表变化前后的完整 URL，注意这两个属性只有Firefox 6+、Chrome 和 Opera 支持，所以还是用location对象来确定当前的参数列表<h4 id="设备事件，移动端的"><a href="#设备事件，移动端的" class="headerlink" title="设备事件，移动端的"></a>设备事件，移动端的</h4><h4 id="触摸与手势事件，移动端"><a href="#触摸与手势事件，移动端" class="headerlink" title="触摸与手势事件，移动端"></a>触摸与手势事件，移动端</h4><h3 id="内存与性能"><a href="#内存与性能" class="headerlink" title="内存与性能"></a>内存与性能</h3></li>
+</ul>
+<ol>
+<li>过多的添加事件处理程序会影响到页面的整体性能，首先，每个函数都是对象，都会占用内存；内存中的对象越多，性能就越差。其次，必须事先指定所有事件处理程序而导致的 DOM 访问次数，会延迟整个页面的交互就绪时间<h4 id="事件委托"><a href="#事件委托" class="headerlink" title="事件委托"></a>事件委托</h4></li>
+<li>事件委托利用了事件冒泡，只指定一个事件处理程序，就可以管理某一类型的所有事件。</li>
+</ol>
+<ul>
+<li>使用事件委托，只需在DOM 树中尽量最高的层次上添加一个事件处理程序。原理是由于所有列表项都是这个元素的子节点，而且它们的事件会冒泡，所以单击事件最终会被这个函数处理</li>
+</ul>
+<ol start="2">
+<li>适合采用事件委托技术的事件包括 click、mousedown、mouseup、keydown、keyup 和 keypress。虽然 mouseover 和 mouseout 事件也冒泡，但要适当处理它们并不容易，而且经常需要计算元素的位置。<h4 id="移除事件处理程序"><a href="#移除事件处理程序" class="headerlink" title="移除事件处理程序"></a>移除事件处理程序</h4></li>
+<li>前因：</li>
+</ol>
+<ul>
+<li>每当将事件处理程序指定给元素时，运行中的浏览器代码与支持页面交互的 JavaScript 代码之间就会建立一个连接。这种连接越多，页面执行起来就越慢。</li>
+<li>内存中留有那些过时不用的“空事件处理程序”占用内存，影响性能<ul>
+<li>通过纯粹的 DOM 操作，从文档中移除带有事件处理程序的元素时，例如使用 innerHTML 替换页面中某一部分的时候，原来添加到元素中的事件处理程序极有可能无法被当作垃圾回收</li>
+<li>卸载页面的时候，。如果在页面被卸载之前没有清理干净事件处理程序，那它们就会滞留在内存中</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>处理1：</li>
+</ol>
+<ul>
+<li><p>如果你知道某个元素即将被移除，那么最好手工移除事件处理程序</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;myDiv&quot;&gt; </span><br><span class="line"> &lt;input type=&quot;button&quot; value=&quot;Click Me&quot; id=&quot;myBtn&quot;&gt; </span><br><span class="line">&lt;/div&gt; </span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt; </span><br><span class="line"> var btn = document.getElementById(&quot;myBtn&quot;);</span><br><span class="line"> btn.onclick = function()&#123; </span><br><span class="line">  //先执行某些操作</span><br><span class="line">  btn.onclick = null; //移除事件处理程序</span><br><span class="line">  document.getElementById(&quot;myDiv&quot;).innerHTML = &quot;Processing...&quot;; </span><br><span class="line">  &#125;; </span><br><span class="line"> &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在事件处理程序中删除按钮也能阻止事件冒泡。目标元素在文档中是事件冒泡的前提</p>
+</li>
+</ul>
+<ol start="3">
+<li>处理2：在页面卸载之前，先通过 onunload 事件处理程序移除所有事件处理程序<h3 id="模拟事件"><a href="#模拟事件" class="headerlink" title="模拟事件"></a>模拟事件</h3><h4 id="DOM中的事件模拟"><a href="#DOM中的事件模拟" class="headerlink" title="DOM中的事件模拟"></a>DOM中的事件模拟</h4></li>
+<li>模拟事件创建流程</li>
+</ol>
+<ul>
+<li>在 document 对象上使用 createEvent()方法创建 event 对象。这个方法接收一个参数，即表示要创建的事件类型的字符串，可以为<ul>
+<li>UIEvents：一般化的 UI 事件。鼠标事件和键盘事件都继承自 UI 事件。DOM3 级中是 UIEvent。  </li>
+<li>MouseEvents：一般化的鼠标事件。DOM3 级中是 MouseEvent。  </li>
+<li>MutationEvents：一般化的 DOM 变动事件。DOM3 级中是 MutationEvent。 </li>
+<li>HTMLEvents：一般化的 HTML 事件。没有对应的 DOM3 级事件（HTML 事件被分散到其他类别中）。</li>
+</ul>
+</li>
+<li>创建了 event 对象之后，还需要使用与事件有关的信息对其进行初始化</li>
+<li>最后一步就是触发事件。这一步需要使用 dispatchEvent()方法，需要传入一个参数，即表示要触发事件的 event 对象</li>
+</ul>
+<ol start="2">
+<li>模拟鼠标事件</li>
+</ol>
+<ul>
+<li>创建鼠标事件对象的方法是为 createEvent()传入字符串”MouseEvents”。返回的对象有一个名为 initMouseEvent()方法，用于指定与该鼠标事件有关的信息。这个方法接收 15 个参数，分别与鼠标事件中每个典型的属性一一对应<img src="JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1_files/24.jpg" alt="initMouseEvent()方法参数值"><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var btn = document.getElementById(&quot;myBtn&quot;); </span><br><span class="line">//创建事件对象</span><br><span class="line">var event = document.createEvent(&quot;MouseEvents&quot;); </span><br><span class="line">//初始化事件对象</span><br><span class="line">event.initMouseEvent(&quot;click&quot;, true, true, document.defaultView, 0, 0, 0, 0, 0, </span><br><span class="line"> false, false, false, false, 0, null); </span><br><span class="line">//触发事件</span><br><span class="line">btn.dispatchEvent(event);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ol start="3">
+<li>模拟键盘事件</li>
+<li>模拟其他事件</li>
+<li>自定义DOM事件<h4 id="IE中的事件模拟"><a href="#IE中的事件模拟" class="headerlink" title="IE中的事件模拟"></a>IE中的事件模拟</h4></li>
+<li>调用 document.createEventObject()方法可以在 IE 中创建 event 对象，返回一个通用的 event 对象</li>
+<li>为这个对象添加所有必要的信息</li>
+<li>在目标上调用 fireEvent()方法，这个方法接受两个参数：事件处理程序的名称和 event 对象<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var btn = document.getElementById(&quot;myBtn&quot;); </span><br><span class="line">//创建事件对象</span><br><span class="line">var event = document.createEventObject(); </span><br><span class="line">//初始化事件对象</span><br><span class="line">event.screenX = 100; </span><br><span class="line">event.screenY = 0; </span><br><span class="line">event.clientX = 0; </span><br><span class="line">event.clientY = 0; </span><br><span class="line">event.ctrlKey = false; </span><br><span class="line">event.altKey = false;</span><br><span class="line">event.shiftKey = false; </span><br><span class="line">event.button = 0; </span><br><span class="line">//触发事件</span><br><span class="line">btn.fireEvent(&quot;onclick&quot;, event);</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="表单脚本"><a href="#表单脚本" class="headerlink" title="表单脚本"></a>表单脚本</h2><h3 id="表单的基础知识"><a href="#表单的基础知识" class="headerlink" title="表单的基础知识"></a>表单的基础知识</h3><ol>
+<li>在 JavaScript 中，表单对应的则是 HTMLFormElement 类型（继承HTMLElement），特有属性和方法：</li>
+</ol>
+<ul>
+<li>acceptCharset：服务器能够处理的字符集；等价于 HTML 中的 accept-charset 特性。</li>
+<li>action：接受请求的 URL；等价于 HTML 中的 action 特性。</li>
+<li>elements：表单中所有控件的集合（HTMLCollection）。</li>
+<li>enctype：请求的编码类型；等价于 HTML 中的 enctype 特性。</li>
+<li>length：表单中控件的数量。</li>
+<li>method：要发送的 HTTP 请求类型，通常是”get”或”post”；等价于 HTML 的 method 特性。</li>
+<li>name：表单的名称；等价于 HTML 的 name 特性。</li>
+<li>reset()：将所有表单域重置为默认值。</li>
+<li>submit()：提交表单。</li>
+<li>target：用于发送请求和接收响应的窗口名称；等价于 HTML 的 target 特性。</li>
+</ul>
+<ol start="2">
+<li>获取form元素</li>
+</ol>
+<ul>
+<li>与其他元素一样，为其添加 id 特性，再使用 getElementById()方法。</li>
+<li>通过 document.forms 可以取得页面中所有的表单，在使用索引或name值<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var firstForm = document.forms[0]; //取得页面中的第一个表单</span><br><span class="line">var myForm = document.forms[&quot;form2&quot;]; //取得页面中名称为&quot;form2&quot;的表单</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h4 id="提交表单"><a href="#提交表单" class="headerlink" title="提交表单"></a>提交表单</h4><ol>
+<li>单击提交按钮或图像按钮时，就会提交表单，以这种方式提交表单时，浏览器会在将请求发送给服务器之前触发 submit 事件</li>
+</ol>
+<ul>
+<li>用<input>或<button>都可以定义提交按钮，只要将其 type 特性的值设置为”submit”即可</button></li>
+<li>将<input>的 type 特性值设置为”image”来定义的，点击按钮也可以提交</li>
+</ul>
+<ol start="2">
+<li><p>在js里，调用 submit()方法也可以提交表单，但不会触发submit 事件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var form = document.getElementById(&quot;myForm&quot;); </span><br><span class="line">//提交表单</span><br><span class="line">form.submit();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>取消表单提交，通过阻止submit 事件默认行为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var form = document.getElementById(&quot;myForm&quot;); </span><br><span class="line">//EventUtil是上一章自定义的，可以方便跨浏览器处理</span><br><span class="line">EventUtil.addHandler(form, &quot;submit&quot;, function(event)&#123; </span><br><span class="line"> //取得事件对象</span><br><span class="line"> event = EventUtil.getEvent(event); </span><br><span class="line"> //阻止默认事件</span><br><span class="line"> EventUtil.preventDefault(event); </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>提交表单容易出现的问题：重复提交（用户不耐烦），可能会造成错误，解决方法：在第一次提交表单后就禁用提交按钮，或者利用 onsubmit 事件处理程序取消后续的表单提交操作</p>
+<h4 id="重置表单"><a href="#重置表单" class="headerlink" title="重置表单"></a>重置表单</h4></li>
+<li><p>使用 type 特性值为”reset”的<input>或<button>都可以创建重置按钮，点击即重置，触发reset事件，利用这个机会，我们可以在必要时取消重置操作</button></p>
+</li>
+<li><p>使用js重置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var form = document.getElementById(&quot;myForm&quot;); </span><br><span class="line">//重置表单</span><br><span class="line">form.reset();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>阻止重置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var form = document.getElementById(&quot;myForm&quot;); </span><br><span class="line">EventUtil.addHandler(form, &quot;reset&quot;, function(event)&#123; </span><br><span class="line"> //取得事件对象</span><br><span class="line"> event = EventUtil.getEvent(event); </span><br><span class="line"> //阻止表单重置</span><br><span class="line"> EventUtil.preventDefault(event); </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h4 id="表单字段"><a href="#表单字段" class="headerlink" title="表单字段"></a>表单字段</h4><ol>
+<li>表单有elements属性,该属性是表单中所有表单元素（字段）的集合,这个 elements 集合是一个有序列表，其中包含着表单中的所有字段,。每个表单字段在 elements 集合中的顺序，与它们出现在标记中的顺序相同，可以按照位置和 name 特性来访问它们</li>
+<li>如果有多个表单控件都在使用一个 name（如单选按钮），那么就会返回以该 name 命名的一个NodeList,如果需要访问单个元素，则需要使用角标</li>
+<li>共有的表单字段属性</li>
+</ol>
+<ul>
+<li>disabled：布尔值，表示当前字段是否被禁用。</li>
+<li>form：指向当前字段所属表单的指针；只读。</li>
+<li>name：当前字段的名称。</li>
+<li>readOnly：布尔值，表示当前字段是否只读。</li>
+<li>tabIndex：表示当前字段的切换（tab）序号。</li>
+<li>type：当前字段的类型，如”checkbox”、”radio”，等等。</li>
+<li>value：当前字段将被提交给服务器的值。对文件字段来说，这个属性是只读的，包含着文件在计算机中的路径。</li>
+</ul>
+<ol start="4">
+<li>共有的表单字段方法：focus()和 blur()</li>
+</ol>
+<ul>
+<li>focus()方法用于将浏览器的焦点设置到表单字段，即激活表单字段，使其可以响应键盘事件。注意如果是type 特性的值为”hidden”<input>元素或者使用 CSS 的 display 和 visibility 属性隐藏了该字段，使用focus方法会报错</li>
+<li>HTML5 为表单字段新增了一个 autofocus 属性，是一个布尔值属性，所以在支持的浏览器中它的值应该是 true</li>
+<li>blur()方法，它的作用是从元素中移走焦点</li>
+</ul>
+<ol start="5">
+<li>共有的表单字段事件</li>
+</ol>
+<ul>
+<li>blur：当前字段失去焦点时触发。</li>
+<li>change：对于<input>和<textarea>元素，在它们失去焦点且 value 值改变时触发；对于</textarea><select>元素，在其选项改变时触发。</select></li>
+<li>focus：当前字段获得焦点时触发。<h3 id="文本框脚本"><a href="#文本框脚本" class="headerlink" title="文本框脚本"></a>文本框脚本</h3></li>
+</ul>
+<ol>
+<li>HTML中的文本框：</li>
+</ol>
+<ul>
+<li><input>元素的单行文本框，type 特性设置为”text”，通过设置 size 特性，可以指定文本框中能够显示的字符数。通过 value 特性，可以设置文本框的初始值，而 maxlength 特性则用于指定文本框可以接受的最大字符数，用户输入的内容保存在 value 属性中</li>
+<li><textarea>的多行文本框，rows 特性指定的是文本框的字符行数，而 cols 特性指定的是文本框的字符列数，用户输入的内容保存在 value 属性中<h4 id="选择文本"><a href="#选择文本" class="headerlink" title="选择文本"></a>选择文本</h4></textarea></li>
+</ul>
+<ol>
+<li><p>select()方法，这个方法用于选择文本框中的所有文本，调用 select()方法时，大多数浏览器（Opera 除外）都会将焦点设置到文本框中。这个方法不接受参数，可以在任何时候被调用</p>
+</li>
+<li><p>选择事件，在选择了文本框中的文本时，就会触发 select事件</p>
+</li>
+<li><p>取得选择的文本：h5新增两个属性：selectionStart 和 selectionEnd，这两个属性中保存的是基于 0 的数值，表示所选择文本的范围，不过IE8以上不支持，兼容的方法为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//取得选择的文本</span><br><span class="line">function getSelectedText(textbox)&#123; </span><br><span class="line">if (typeof textbox.selectionStart == &quot;number&quot;)&#123; </span><br><span class="line"> return textbox.value.substring(textbox.selectionStart, </span><br><span class="line"> textbox.selectionEnd); </span><br><span class="line">&#125; else if (document.selection)&#123; </span><br><span class="line">return document.selection.createRange().text; </span><br><span class="line">&#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>选择部分文本：setSelectionRange()方法。这个方法接收两个参数：要选择的第一个字符的索引和要选择的最后一个字符之后的字符的索引，IE8不支持</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//兼容方式</span><br><span class="line">function selectText(textbox, startIndex, stopIndex)&#123; </span><br><span class="line"> if (textbox.setSelectionRange)&#123; </span><br><span class="line"> textbox.setSelectionRange(startIndex, stopIndex); </span><br><span class="line"> &#125; else if (textbox.createTextRange)&#123; //IE8支持</span><br><span class="line"> var range = textbox.createTextRange(); </span><br><span class="line"> range.collapse(true); </span><br><span class="line"> range.moveStart(&quot;character&quot;, startIndex); </span><br><span class="line"> range.moveEnd(&quot;character&quot;, stopIndex - startIndex); </span><br><span class="line"> range.select(); </span><br><span class="line"> &#125;</span><br><span class="line">  textbox.focus(); </span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h4 id="过滤输入"><a href="#过滤输入" class="headerlink" title="过滤输入"></a>过滤输入</h4><ol>
+<li><p>屏蔽字符，通过阻止keypress 事件的默认行为来屏蔽此类字符</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">// 只允许用户输入数值</span><br><span class="line">EventUtil.addHandler(textbox, &quot;keypress&quot;, function(event)&#123; </span><br><span class="line"> event = EventUtil.getEvent(event); </span><br><span class="line"> var target = EventUtil.getTarget(event); </span><br><span class="line"> var charCode = EventUtil.getCharCode(event); </span><br><span class="line"> if (!/\d/.test(String.fromCharCode(charCode)) &amp;&amp; charCode &gt; 9)&#123; </span><br><span class="line">	 /*  \d:0-9的数字，test是正则匹配，String.fromCharCode()将字符编码转换成字符串，charCode &gt; 9是为了兼容火狐和Safari */</span><br><span class="line">	 EventUtil.preventDefault(event);</span><br><span class="line">	 &#125;</span><br><span class="line">	 &#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>操作剪贴板，</p>
+</li>
+</ol>
+<ul>
+<li>剪贴板事件：<ul>
+<li>beforecopy：在发生复制操作前触发。</li>
+<li>copy：在发生复制操作时触发。</li>
+<li>beforecut：在发生剪切操作前触发。</li>
+<li>cut：在发生剪切操作时触发。</li>
+<li>beforepaste：在发生粘贴操作前触发。</li>
+<li>paste：在发生粘贴操作时触发。</li>
+</ul>
+</li>
+<li>访问剪贴板中的数据，可以使用 clipboardData 对象，在 IE 中，这个对象是 window 对象的属性；而在 Firefox 4+、Safari 和 Chrome 中，这个对象是相应 event 对象的属性，只在发生剪贴板事件期间使用这个对象，它有三个方法<ul>
+<li>getData()用于从剪贴板中取得数据，它接受一个参数，即要取得的数据的格式</li>
+<li>setData()方法的第一个参数也是数据类型，第二个参数是要放在剪贴板中的文本<h4 id="自动切换焦点"><a href="#自动切换焦点" class="headerlink" title="自动切换焦点"></a>自动切换焦点</h4></li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>在用户填写完当前字段时，自动将焦点切换到下一个字段，在自动切换焦点之前，必须知道用户已经输入了既定长度的数据，比如填那种分成几段的电话号码<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">html代码</span><br><span class="line">&lt;input type=&quot;text&quot; name=&quot;tel1&quot; id=&quot;txtTel1&quot; maxlength=&quot;3&quot;&gt; </span><br><span class="line">&lt;input type=&quot;text&quot; name=&quot;tel2&quot; id=&quot;txtTel2&quot; maxlength=&quot;3&quot;&gt; </span><br><span class="line">&lt;input type=&quot;text&quot; name=&quot;tel3&quot; id=&quot;txtTel3&quot; maxlength=&quot;4&quot;&gt;</span><br><span class="line">js代码</span><br><span class="line">(function()&#123; </span><br><span class="line"> function tabForward(event)&#123; </span><br><span class="line"> event = EventUtil.getEvent(event); </span><br><span class="line"> var target = EventUtil.getTarget(event); </span><br><span class="line"> if (target.value.length == target.maxLength)&#123; </span><br><span class="line"> var form = target.form; </span><br><span class="line"> for (var i=0, len=form.elements.length; i &lt; len; i++) &#123; </span><br><span class="line"> if (form.elements[i] == target) &#123; </span><br><span class="line"> if (form.elements[i+1])&#123; </span><br><span class="line"> form.elements[i+1].focus(); </span><br><span class="line"> &#125; </span><br><span class="line"> return; </span><br><span class="line"> &#125; </span><br><span class="line"> &#125; </span><br><span class="line"> &#125; </span><br><span class="line"> &#125; </span><br><span class="line"> var textbox1 = document.getElementById(&quot;txtTel1&quot;); </span><br><span class="line"> var textbox2 = document.getElementById(&quot;txtTel2&quot;); </span><br><span class="line"> var textbox3 = document.getElementById(&quot;txtTel3&quot;); </span><br><span class="line"> EventUtil.addHandler(textbox1, &quot;keyup&quot;, tabForward); </span><br><span class="line"> EventUtil.addHandler(textbox2, &quot;keyup&quot;, tabForward); </span><br><span class="line"> EventUtil.addHandler(textbox3, &quot;keyup&quot;, tabForward); </span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h4 id="h5约束验证API-自动验证"><a href="#h5约束验证API-自动验证" class="headerlink" title="h5约束验证API(自动验证)"></a>h5约束验证API(自动验证)</h4><ol>
+<li>必填字段：在表单字段中指定了 required 属性，适用于<input>、<textarea>和</textarea><select>字段</select></li>
+<li>其他输入类型：”email”和”url”类型，”email”类型要求输入的文本必须符合电子邮件地址的模式，而”url”类型要求输入的文本必须符合 URL 的模式</li>
+<li>数值范围：”number”、”range”、”datetime”、”datetime-local”、”date”、”month”、”week”，还有”time”。对所有这些数值类型的输入元素，可以指定 min 属性（最小的可能值）、max 属性（最大的可能值）和 step 属性（从 min 到 max 的两个刻度间的差值），注意这些类型不一定能用</li>
+<li>输入模式：pattern 属性。这个属性的值是一个正则表达式，用于匹配文本框中的值，注意，模式的开头和末尾不用加^和$符号</li>
+<li>检测有效性：</li>
+</ol>
+<ul>
+<li>使用 checkValidity()方法可以检测表单中的某个字段是否有效</li>
+<li>validity 属性则会告诉你为什么字段有效或无效<img src="JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1_files/25.jpg" alt></li>
+</ul>
+<ol start="6">
+<li>禁用验证：通过在HTML里设置 novalidate 属性，可以告诉表单不进行验证。在 JavaScript 中使用 noValidate 属性可以取得或设置这个值，如果这个属性存在，值为 true，如果不存在，值为 false。<h3 id="选择框脚本"><a href="#选择框脚本" class="headerlink" title="选择框脚本"></a>选择框脚本</h3></li>
+<li>HTMLSelectElement 类型特有方法</li>
+</ol>
+<ul>
+<li>add(newOption, relOption)：向控件中插入新<option>元素，其位置在相关项（relOption）之前。</option></li>
+<li>multiple：布尔值，表示是否允许多项选择；等价于 HTML 中的 multiple 特性。</li>
+<li>options：控件中所有<option>元素的 HTMLCollection。  remove(index)：移除给定位置的选项。</option></li>
+<li>selectedIndex：基于 0 的选中项的索引，如果没有选中项，则值为-1。对于支持多选的控件，只保存选中项中第一项的索引。</li>
+<li>size：选择框中可见的行数；等价于 HTML 中的 size 特性。</li>
+</ul>
+<ol start="2">
+<li>选择框的 type 属性不是”select-one”，就是”select-multiple”，这取决于 HTML 代码中有没有 multiple 特性</li>
+<li>选择框的 value 属性由当前选中项决定，规则如下</li>
+</ol>
+<ul>
+<li>如果没有选中的项，则选择框的 value 属性保存空字符串。</li>
+<li>如果有一个选中项，而且该项的 value 特性已经在 HTML 中指定，则选择框的 value 属性等于选中项的 value 特性。即使 value 特性的值是空字符串，也同样遵循此条规则。</li>
+<li>如果有一个选中项，但该项的 value 特性在 HTML 中未指定，则选择框的 value 属性等于该项的文本。</li>
+<li>如果有多个选中项，则选择框的 value 属性将依据前两条规则取得第一个选中项的值。</li>
+</ul>
+<ol start="4">
+<li>HTMLOptionElement 对象属性</li>
+</ol>
+<ul>
+<li>index：当前选项在 options 集合中的索引。</li>
+<li>label：当前选项的标签；等价于 HTML 中的 label 特性。</li>
+<li>selected：布尔值，表示当前选项是否被选中。将这个属性设置为 true 可以选中当前选项。</li>
+<li>text：选项的文本。</li>
+<li>value：选项的值（等价于 HTML 中的 value 特性）。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var selectbox = document.forms[0]. elements[&quot;location&quot;]; </span><br><span class="line">//推荐</span><br><span class="line">var text = selectbox.options[0].text; //选项的文本</span><br><span class="line">var value = selectbox.options[0].value; //选项的值</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h4 id="选择选项"><a href="#选择选项" class="headerlink" title="选择选项"></a>选择选项</h4><ol>
+<li><p>对于单选，访问选中项的方式就是使用选择框的 selectedIndex 属性，多选不适用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//取得选中项和选中项的信息</span><br><span class="line">var selectedOption = selectbox.options[selectbox.selectedIndex];</span><br><span class="line">var selectedIndex = selectbox.selectedIndex; </span><br><span class="line">var selectedOption = selectbox.options[selectedIndex];</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>selected 属性设置为 true可以选中选项，selected 属性的作用主要是确定用户选择了选择框中的哪一项。要取得所有选中的项，可以循环遍历选项集合，然后测试每个选项的 selected 属性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">//返回给定选择框中选中项的一个数组</span><br><span class="line">function getSelectedOptions(selectbox)&#123; </span><br><span class="line"> var result = new Array(); </span><br><span class="line"> var option = null; </span><br><span class="line"> for (var i=0, len=selectbox.options.length; i &lt; len; i++)&#123; </span><br><span class="line"> option = selectbox.options[i]; </span><br><span class="line"> if (option.selected)&#123; </span><br><span class="line"> result.push(option); </span><br><span class="line"> &#125; </span><br><span class="line"> &#125; </span><br><span class="line"> return result; </span><br><span class="line">&#125;</span><br><span class="line">// 对这个数组进行操作</span><br><span class="line">var selectbox = document.getElementById(&quot;selLocation&quot;); </span><br><span class="line">var selectedOptions = getSelectedOptions(selectbox); </span><br><span class="line">var message = &quot;&quot;; </span><br><span class="line">for (var i=0, len=selectedOptions.length; i &lt; len; i++)&#123; </span><br><span class="line"> message += &quot;Selected index: &quot; + selectedOptions[i].index + </span><br><span class="line"> &quot;\nSelected text: &quot; + selectedOptions[i].text + </span><br><span class="line"> &quot;\nSelected value: &quot; + selectedOptions[i].value + &quot;\n\n&quot;; </span><br><span class="line">&#125; </span><br><span class="line">alert(message);</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h4 id="添加选项"><a href="#添加选项" class="headerlink" title="添加选项"></a>添加选项</h4><ol>
+<li><p>使用DOM 方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var newOption = document.createElement(&quot;option&quot;); </span><br><span class="line">newOption.appendChild(document.createTextNode(&quot;Option text&quot;)); </span><br><span class="line">newOption.setAttribute(&quot;value&quot;, &quot;Option value&quot;); </span><br><span class="line">selectbox.appendChild(newOption);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用 Option 构造函数来创建新选项，接受两个参数：文本（text）和值（value）；第二个参数可选</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var newOption = new Option(&quot;Option text&quot;, &quot;Option value&quot;); </span><br><span class="line">selectbox.appendChild(newOption); //在 IE8 及之前版本中有问题</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用选择框的 add()方法,接受两个参数：要添加的新选项和将位于新选项之后的选项,第二个参数传入 undefined，就可以在所有浏览器中都将新选项插入到列表最后了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var newOption = new Option(&quot;Option text&quot;, &quot;Option value&quot;); </span><br><span class="line">selectbox.add(newOption, undefined); //最佳方案</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>想将新选项添加到其他位置（不是最后一个），就应该使用标准的 DOM 技术和 insertBefore()方法。</p>
+<h4 id="移除选项"><a href="#移除选项" class="headerlink" title="移除选项"></a>移除选项</h4></li>
+<li><p>使用 DOM 的 removeChild()方法，为其传入要移除的选项</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">selectbox.removeChild(selectbox.options[0]); //移除第一个选项</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用选择框的 remove()方法。这个方法接受一个参数，即要移除选项的索引</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">selectbox.remove(0); //移除第一个选项</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>将相应选项设置为 null</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">selectbox.options[0] = null; //移除第一个选项</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>清除选择框中所有的项，需要迭代所有选项并逐个移除它们</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">function clearSelectbox(selectbox)&#123; </span><br><span class="line"> for(var i=0, len=selectbox.options.length; i &lt; len; i++)&#123; </span><br><span class="line"> selectbox.remove(i); </span><br><span class="line"> &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h4 id="移动和重排选项"><a href="#移动和重排选项" class="headerlink" title="移动和重排选项"></a>移动和重排选项</h4><ol>
+<li>使用 DOM 的 appendChild()方法，就可以将第一个选择框中的选项直接移动到第二个选择框中，原理是如果为 appendChild()方法传入一个文档中已有的元素，那么就会先从该元素的父节点中移除它，再把它添加到指定的位置</li>
+<li>要将选择框中的某一项移动到特定位置，最合适的 DOM 方法就是 insertBefore()<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var optionToMove = selectbox.options[1]; </span><br><span class="line">selectbox.insertBefore(optionToMove, selectbox.options[optionToMove.index+2]);</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="表单序列化"><a href="#表单序列化" class="headerlink" title="表单序列化"></a>表单序列化</h3><ol>
+<li>在表单提交期间，浏览器是怎样将数据发送给服务器的。</li>
+</ol>
+<ul>
+<li>对表单字段的名称和值进行 URL 编码，使用和号（&amp;）分隔。</li>
+<li>不发送禁用的表单字段。</li>
+<li>只发送勾选的复选框和单选按钮。</li>
+<li>不发送 type 为”reset”和”button”的按钮。</li>
+<li>多选选择框中的每个选中的值单独一个条目。</li>
+<li>在单击提交按钮提交表单的情况下，也会发送提交按钮；否则，不发送提交按钮。也包括 type为”image”的<input>元素。</li>
+<li><select>元素的值，就是选中的<option>元素的 value 特性的值。如果</option><option>元素没有value 特性，则是</option><option>元素的文本值。</option></select></li>
+</ul>
+<ol start="2">
+<li>实现表单序列化的代码<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">function serialize(form)&#123; </span><br><span class="line"> var parts = [], </span><br><span class="line"> field = null, </span><br><span class="line"> i, </span><br><span class="line"> len, </span><br><span class="line"> j, </span><br><span class="line"> optLen, </span><br><span class="line"> option, </span><br><span class="line"> optValue; </span><br><span class="line"> for (i=0, len=form.elements.length; i &lt; len; i++)&#123; </span><br><span class="line"> field = form.elements[i]; </span><br><span class="line"> switch(field.type)&#123; </span><br><span class="line"> case &quot;select-one&quot;: </span><br><span class="line"> case &quot;select-multiple&quot;: </span><br><span class="line"> if (field.name.length)&#123; </span><br><span class="line"> for (j=0, optLen = field.options.length; j &lt; optLen; j++)&#123;</span><br><span class="line">	 option = field.options[j]; </span><br><span class="line">	  if (option.selected)&#123; </span><br><span class="line">	  optValue = &quot;&quot;; </span><br><span class="line">	  if (option.hasAttribute)&#123; </span><br><span class="line">	  optValue = (option.hasAttribute(&quot;value&quot;) ? </span><br><span class="line">	  option.value : option.text); </span><br><span class="line">	  &#125; else &#123; </span><br><span class="line">	  optValue = (option.attributes[&quot;value&quot;].specified ? </span><br><span class="line">	  option.value : option.text); </span><br><span class="line">	  &#125; </span><br><span class="line">	  parts.push(encodeURIComponent(field.name) + &quot;=&quot; + </span><br><span class="line">	  encodeURIComponent(optValue)); </span><br><span class="line">	  &#125; </span><br><span class="line">	  &#125; </span><br><span class="line">	  &#125; </span><br><span class="line">	  break; </span><br><span class="line">	  case undefined: //字段集</span><br><span class="line">	  case &quot;file&quot;: //文件输入</span><br><span class="line">	  case &quot;submit&quot;: //提交按钮</span><br><span class="line">	  case &quot;reset&quot;: //重置按钮</span><br><span class="line">	  case &quot;button&quot;: //自定义按钮</span><br><span class="line">	  break; </span><br><span class="line">	  case &quot;radio&quot;: //单选按钮</span><br><span class="line">	  case &quot;checkbox&quot;: //复选框</span><br><span class="line">	  if (!field.checked)&#123; </span><br><span class="line">	  break; </span><br><span class="line">	  &#125; </span><br><span class="line">	  /* 执行默认操作 */ </span><br><span class="line">	  default: </span><br><span class="line">	  //不包含没有名字的表单字段</span><br><span class="line">	  if (field.name.length)&#123; </span><br><span class="line">	  parts.push(encodeURIComponent(field.name) + &quot;=&quot; + </span><br><span class="line">	  encodeURIComponent(field.value)); </span><br><span class="line">	  &#125; </span><br><span class="line">	  &#125; </span><br><span class="line">	  &#125; </span><br><span class="line">	  return parts.join(&quot;&amp;&quot;); </span><br><span class="line">	 &#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="富文本编辑（WYSIWYG（What-You-See-Is-What-You-Get，所见即所得）。了解一下"><a href="#富文本编辑（WYSIWYG（What-You-See-Is-What-You-Get，所见即所得）。了解一下" class="headerlink" title="富文本编辑（WYSIWYG（What You See Is What You Get，所见即所得）。了解一下"></a>富文本编辑（WYSIWYG（What You See Is What You Get，所见即所得）。了解一下</h3><ol>
+<li>这一技术的本质，就是在页面中嵌入一个包含空 HTML 页面的 iframe。</li>
+</ol>
+<ul>
+<li>通过设置 designMode 属性，这个空白的 HTML 页面可以被编辑，而编辑对象则是该页面<body>元素的 HTML 代码。</body></li>
+<li>designMode 属性有两个可能的值：”off”（默认值）和”on”。在设置为”on”时，整个文档都会变得可以编辑（显示插入符号），然后就可以像使用字处理软件一样，通过键盘将文本内容加粗、变成斜体，等等<h4 id="使用contenteditable属性"><a href="#使用contenteditable属性" class="headerlink" title="使用contenteditable属性"></a>使用contenteditable属性</h4></li>
+</ul>
+<ol>
+<li>把 contenteditable 属性应用给页面中的任何元素，然后用户立即就可以编辑该元素</li>
+<li>contenteditable 属性有三个可能的值：”true”表示打开、”false”表示关闭，”inherit”表示<br>从父元素那里继承<h4 id="操作富文本"><a href="#操作富文本" class="headerlink" title="操作富文本"></a>操作富文本</h4></li>
+<li>与富文本编辑器交互的主要方式，就是使用 document.execCommand()。</li>
+<li>可以为 document.execCommand()方法传递 3 个参数：要执行的命令名称、表示浏览器是否应该为当前命令提供用户界面的一个布尔值（建议始终为false）和执行命令必须的一个值（如果不需要值，则传递 null）。</li>
+<li>预定义命令<img src="JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1_files/26.jpg" alt>)，<img src="JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1_files/27.jpg" alt><h4 id="富文本选区"><a href="#富文本选区" class="headerlink" title="富文本选区"></a>富文本选区</h4></li>
+<li>在富文本编辑器中，使用框架（iframe）的 getSelection()方法，可以确定实际选择的文本。这个方法是 window 对象和 document 对象的属性，调用它会返回一个表示当前选择文本的 Selection对象</li>
+<li>每个 Selection 对象都有下列属性。</li>
+</ol>
+<ul>
+<li>anchorNode：选区起点所在的节点。</li>
+<li>anchorOffset：在到达选区起点位置之前跳过的 anchorNode 中的字符数量。</li>
+<li>focusNode：选区终点所在的节点。</li>
+<li>focusOffset：focusNode 中包含在选区之内的字符数量。</li>
+<li>isCollapsed：布尔值，表示选区的起点和终点是否重合。</li>
+<li>rangeCount：选区中包含的 DOM 范围的数量。</li>
+</ul>
+<ol start="3">
+<li>Selection 对象的方法，<img src="JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1_files/28.jpg" alt><h4 id="表单与富文本"><a href="#表单与富文本" class="headerlink" title="表单与富文本"></a>表单与富文本</h4></li>
+</ol>
+
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/alipay.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weixin.png">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2019/10/01/js高级程序设计第六部分/" target="_blank">js高级程序设计第六部分</a>
-  
-    </h1>
-  
+      </a>
+    </div>
+    
 
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          fg
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="http://yoursite.com/2019/10/01/js高级程序设计第六部分/" title="js高级程序设计第六部分" target="_blank">http://yoursite.com/2019/10/01/js高级程序设计第六部分/</a>
+        </li>
+        <li>
+          <strong>版权声明： </strong>
+          本博客所有文章除特别声明外，均采用 <a href="https://www.apache.org/licenses/LICENSE-2.0.html" rel="external nofollow" target="_blank">Apache License 2.0</a> 许可协议。转载请注明出处！
+        </li>
+      </ul>
+    </div>
+    
 
-        <div class="article-info info-on-right">
-          
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -286,390 +984,116 @@
 		</ul>
 	</div>
 
-          
+    
 
+    
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/01/js高级程序设计第六部分/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/10/01/js高级程序设计第五部分/" class="archive-article-date">
-        <time datetime="2019-10-01T08:54:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-01</time>
-</a>
 
+
+<nav id="article-nav">
+  
+    <a href="/2019/10/01/js高级程序设计第七部分/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          js高级程序设计第七部分
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/10/01/js高级程序设计第五部分/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">js高级程序设计第五部分</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2019/10/01/js高级程序设计第五部分/" target="_blank">js高级程序设计第五部分</a>
-  
-    </h1>
-  
+        
+        
+    </div>
+</aside>
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">读书笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/10/01/js高级程序设计第四部分/" class="archive-article-date">
-        <time datetime="2019-10-01T08:51:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-01</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2019/10/01/js高级程序设计第四部分/" target="_blank">js高级程序设计第四部分</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">读书笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/10/01/js高级程序设计第三部分/" class="archive-article-date">
-        <time datetime="2019-10-01T08:48:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-01</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2019/10/01/js高级程序设计第三部分/" target="_blank">js高级程序设计第三部分</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">读书笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/10/01/js高级程序设计第二部分/" class="archive-article-date">
-        <time datetime="2019-10-01T08:38:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-01</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2019/10/01/js高级程序设计第二部分/" target="_blank">js高级程序设计第二部分</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">读书笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/10/01/js高级程序设计第一部分/" class="archive-article-date">
-        <time datetime="2019-10-01T08:26:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-01</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2019/10/01/js高级程序设计第一部分/" target="_blank">js高级程序设计第一部分</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">读书笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/10/01/jsDOM编程艺术记录/" class="archive-article-date">
-        <time datetime="2019-10-01T08:24:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-01</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2019/10/01/jsDOM编程艺术记录/" target="_blank">jsDOM编程艺术记录</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">读书笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/10/01/学习随记/" class="archive-article-date">
-        <time datetime="2019-10-01T07:36:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-01</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2019/10/01/学习随记/" target="_blank">学习随记</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">记录</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/09/29/js中keyup-keypress-keydown以及oninput四个事件/" class="archive-article-date">
-        <time datetime="2019-09-29T02:19:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-29</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2019/09/29/js中keyup-keypress-keydown以及oninput四个事件/" target="_blank">js中keyup, keypress, keydown以及oninput四个事件.md</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/">Next &raquo;</a>
-    </nav>
-  
 
 
           </div>
@@ -710,8 +1134,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,

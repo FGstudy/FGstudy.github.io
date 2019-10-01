@@ -18,7 +18,7 @@
 <meta property="og:site_name" content="FGstudy">
 <meta property="og:description" content="关于js中keyup, keypress, keydown以及oninput四个事件基本知识简述 keydown事件：当用户按下键盘上的任意键时触发，而且如果按住不放的话，会重复触发此事件。 keypress事件：当用户按下键盘上的字符键时触发，而且如果按住不放的话，会重复触发此事件。 keyup事件：当用户释放键盘上的键时触发。 oninput事件：在 &amp;lt;input&amp;gt; 或 &amp;lt;t">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-29T02:31:07.648Z">
+<meta property="og:updated_time" content="2019-10-01T07:50:53.907Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js中keyup, keypress, keydown以及oninput四个事件.md">
 <meta name="twitter:description" content="关于js中keyup, keypress, keydown以及oninput四个事件基本知识简述 keydown事件：当用户按下键盘上的任意键时触发，而且如果按住不放的话，会重复触发此事件。 keypress事件：当用户按下键盘上的字符键时触发，而且如果按住不放的话，会重复触发此事件。 keyup事件：当用户释放键盘上的键时触发。 oninput事件：在 &amp;lt;input&amp;gt; 或 &amp;lt;t">
@@ -76,9 +76,9 @@
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/" target="_blank">主页</a></li>
+				<li><a href="/" target="_blank">首页</a></li>
 	        
-				<li><a href="https://zhousiwei.gitee.io/ibooks/" target="_blank">技术笔记</a></li>
+				<li><a href="/tags/读书笔记/" target="_blank">读书笔记</a></li>
 	        
 				<li><a href="/tags/随笔/" target="_blank">随笔</a></li>
 	        
@@ -91,7 +91,7 @@
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友情链接</a>
     			
             
     			
@@ -102,7 +102,7 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" href="#" title="GitHub" target="_blank"><i class="icon-github"></i></a>
+					<a class="github" href="https://github.com/FGstudy" title="GitHub" target="_blank"><i class="icon-github"></i></a>
 		        
 					<a class="gitee" href="#" title="码云" target="_blank"><i class="icon-gitee"></i></a>
 		        
@@ -166,7 +166,7 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="GitHub"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://github.com/FGstudy" title="GitHub"><i class="icon-github"></i></a>
 			        
 						<a class="gitee" target="_blank" href="#" title="码云"><i class="icon-gitee"></i></a>
 			        
@@ -179,9 +179,9 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">首页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="https://zhousiwei.gitee.io/ibooks/">技术笔记</a></li>
+					<li style="width: 33.333333333333336%"><a href="/tags/读书笔记/">读书笔记</a></li>
 		        
 					<li style="width: 33.333333333333336%"><a href="/tags/随笔/">随笔</a></li>
 		        
@@ -232,7 +232,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">519字</span>
+      <span class="post-count">542字</span>
     </span>
   </span>
 
@@ -256,7 +256,7 @@
 <li>keydown事件：当用户按下键盘上的任意键时触发，而且如果按住不放的话，会重复触发此事件。</li>
 <li>keypress事件：当用户按下键盘上的字符键时触发，而且如果按住不放的话，会重复触发此事件。</li>
 <li>keyup事件：当用户释放键盘上的键时触发。</li>
-<li>oninput事件：在 &lt;input&gt; 或 &lt;textarea&gt; 元素的值发生改变时触发<h3 id="具体触发效果"><a href="#具体触发效果" class="headerlink" title="具体触发效果"></a>具体触发效果</h3><h4 id="测试代码"><a href="#测试代码" class="headerlink" title="测试代码"></a>测试代码</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">//测试keyup, keypress, keydown以及oninput四个事件的触发机制</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;wrapper&quot;&gt;</span><br><span class="line">    &lt;input id=&quot;input&quot; type=&quot;text&quot;&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">    var input = document.getElementById(&quot;input&quot;);</span><br><span class="line">    input.addEventListener(&quot;keyup&quot;,function()&#123;</span><br><span class="line">        console.log(&apos;event handle keyup&apos;);</span><br><span class="line">    &#125;);</span><br><span class="line">    input.addEventListener(&quot;keydown&quot;,function()&#123;</span><br><span class="line">        console.log(&apos;event handle keydown&apos;);</span><br><span class="line">    &#125;);</span><br><span class="line">    input.addEventListener(&quot;keypress&quot;,function()&#123;</span><br><span class="line">        console.log(&apos;event handle keypress&apos;);</span><br><span class="line">    &#125;);</span><br><span class="line">    input.addEventListener(&quot;input&quot;,function()&#123;</span><br><span class="line">        console.log(&apos;event handle input&apos;);</span><br><span class="line">    &#125;);</span><br><span class="line">			</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<li>oninput事件：在 &lt;input&gt; 或 &lt;textarea&gt; 元素的值发生改变时触发<br>后面的内容在首页不显示，请点击下方的展开全文或者<a id="more"></a><h3 id="具体触发效果"><a href="#具体触发效果" class="headerlink" title="具体触发效果"></a>具体触发效果</h3><h4 id="测试代码"><a href="#测试代码" class="headerlink" title="测试代码"></a>测试代码</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">//测试keyup, keypress, keydown以及oninput四个事件的触发机制</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;wrapper&quot;&gt;</span><br><span class="line">    &lt;input id=&quot;input&quot; type=&quot;text&quot;&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">    var input = document.getElementById(&quot;input&quot;);</span><br><span class="line">    input.addEventListener(&quot;keyup&quot;,function()&#123;</span><br><span class="line">        console.log(&apos;event handle keyup&apos;);</span><br><span class="line">    &#125;);</span><br><span class="line">    input.addEventListener(&quot;keydown&quot;,function()&#123;</span><br><span class="line">        console.log(&apos;event handle keydown&apos;);</span><br><span class="line">    &#125;);</span><br><span class="line">    input.addEventListener(&quot;keypress&quot;,function()&#123;</span><br><span class="line">        console.log(&apos;event handle keypress&apos;);</span><br><span class="line">    &#125;);</span><br><span class="line">    input.addEventListener(&quot;input&quot;,function()&#123;</span><br><span class="line">        console.log(&apos;event handle input&apos;);</span><br><span class="line">    &#125;);</span><br><span class="line">			</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 
 </li>
 </ol>
@@ -426,6 +426,15 @@
 
 <nav id="article-nav">
   
+    <a href="/2019/10/01/学习随记/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          学习随记
+        
+      </div>
+    </a>
+  
   
     <a href="/2019/09/28/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title"></div>
@@ -565,7 +574,7 @@
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友情链接</a></li>
       
         
       
@@ -599,6 +608,14 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">读书笔记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">记录</a>
               </li>
             
             <div class="clearfix"></div>
@@ -650,15 +667,6 @@
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="https://zhousiwei.gitee.io/ibooks/" target="_blank" class="search-title" title="记录工作和学习过程中的笔记：Java、前端开发、Hexo博客、聚合支付、Linux笔记、ElasticSearch、ELK日志分析">
-                
-                  <img src="https://zhousiwei.gitee.io/ibooks/favicon.ico">
-                
-                技术笔记
-              </a>
-            </li>
-          
-            <li class="search-li">
               <a href="https://github.com/FGstudy" target="_blank" class="search-title" >
                 
                   <i class="icon-link icon"></i>
@@ -668,25 +676,7 @@
             </li>
           
             <li class="search-li">
-              <a href="https://gitee.com/zhousiwei" target="_blank" class="search-title" >
-                
-                  <i class="icon-link icon"></i>
-                
-                码云
-              </a>
-            </li>
-          
-            <li class="search-li">
-              <a href="https://www.jianshu.com/u/02cbf31a043a" target="_blank" class="search-title" >
-                
-                  <i class="icon-link icon"></i>
-                
-                简书
-              </a>
-            </li>
-          
-            <li class="search-li">
-              <a href="https://blog.csdn.net/qq_30930805" target="_blank" class="search-title" >
+              <a href="https://me.csdn.net/FGstudy" target="_blank" class="search-title" >
                 
                   <i class="icon-link icon"></i>
                 
@@ -703,7 +693,7 @@
     	<section class="tools-section tools-section-me" q-show="aboutme">
         
           
-  	  		<div class="aboutme-wrap" id="aboutme">主要涉及技术：<br>HTML、CSS、JavaScript（前端三剑客）<br>菜鸟前端的漫漫学习路<br>请多指教，谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="aboutme">主要涉及技术：<br>HTML、CSS、JavaScript（前端三剑客）<br>菜鸟前端的漫漫学习路<br>请多指教</div>
   	  	
     	</section>
     
