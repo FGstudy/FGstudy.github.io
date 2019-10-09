@@ -203,6 +203,209 @@
             
 
   
+    <article id="post-jQuery与ajax学习记录2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2019/10/09/jQuery与ajax学习记录2/" target="_blank">jQuery与ajax学习记录第二部分--原理、ajax、json、cookie</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2019/10/09/jQuery与ajax学习记录2/" class="archive-article-date">
+        <time datetime="2019-10-09T11:53:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h2 id="jQuery原理"><a href="#jQuery原理" class="headerlink" title="jQuery原理"></a>jQuery原理</h2><h3 id="jQuery的基本结构"><a href="#jQuery的基本结构" class="headerlink" title="jQuery的基本结构"></a>jQuery的基本结构</h3><ol>
+<li>jQuery的本质是一个闭包</li>
+<li>jQuery为什么要使用闭包来实现?</li>
+</ol>
+<ul>
+<li>为了避免多个框架的冲突</li>
+</ul>
+<ol start="3">
+<li>jQuery如何让外界访问内部定义的局部变量</li>
+</ol>
+<ul>
+<li>window.xxx = xxx;</li>
+</ul>
+<ol start="4">
+<li>jQuery为什么要给自己传递一个window参数?</li>
+</ol>
+<ul>
+<li>为了方便后期压缩代码</li>
+<li>为了提升查找的效率<br>后面的内容在首页不显示，请点击下方的展开全文或者
+    
+    <a class="article-more-a" href="/2019/10/09/jQuery与ajax学习记录2/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">记录</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2019/10/09/jQuery与ajax学习记录2/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-jQuery与ajax学习记录1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2019/10/09/jQuery与ajax学习记录1/" target="_blank">jQuery与ajax学习记录第一部分--基础知识</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2019/10/09/jQuery与ajax学习记录1/" class="archive-article-date">
+        <time datetime="2019-10-09T11:37:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h2 id="jQuery基础"><a href="#jQuery基础" class="headerlink" title="jQuery基础"></a>jQuery基础</h2><h3 id="入口函数"><a href="#入口函数" class="headerlink" title="入口函数"></a>入口函数</h3><ol>
+<li><p>入口函数的写法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//原生js写法</span><br><span class="line">window.onload = function(event)&#123;</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//jQuery写法</span><br><span class="line">$(document).ready(function()&#123;</span><br><span class="line">	</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>原生js与jQuery入口函数的区别</p>
+</li>
+</ol>
+<ul>
+<li>加载模式不同，原生JS会等到DOM元素加载完毕,并且图片也加载完毕才会执行，jQuery会等到DOM元素加载完毕,但不会等到图片也加载完毕就会执行</li>
+<li>原生的JS如果编写了多个入口函数,后面编写的会覆盖前面编写的，jQuery中编写多个入口函数,后面的不会覆盖前面的<br>后面的内容在首页不显示，请点击下方的展开全文或者
+    
+    <a class="article-more-a" href="/2019/10/09/jQuery与ajax学习记录1/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">记录</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2019/10/09/jQuery与ajax学习记录1/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-js高级程序设计第七部分" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -988,219 +1191,6 @@
     
     <p class="article-more-link">
       <a class="article-more-a" href="/2019/10/01/jsDOM编程艺术记录/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-学习随记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2019/10/01/学习随记/" target="_blank">学习随记</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2019/10/01/学习随记/" class="archive-article-date">
-        <time datetime="2019-10-01T07:36:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-01</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="从HTML到CSS到Javascript"><a href="#从HTML到CSS到Javascript" class="headerlink" title="从HTML到CSS到Javascript"></a>从HTML到CSS到Javascript</h1><h2 id="HTML与CSS"><a href="#HTML与CSS" class="headerlink" title="HTML与CSS"></a>HTML与CSS</h2><ol>
-<li>切图格式</li>
-</ol>
-<ul>
-<li>矩形图片切成jpg格式，图标是矩形时，也要切成jpg格式</li>
-<li>非矩形图片切成PNG格式</li>
-</ul>
-<ol start="2">
-<li>高度属性值设置为百分比时，仅限于父级元素不是body，而且还有宽度时生效<br> 宽度属性值为百分比在任意情况下都生效</li>
-<li>display:none 可以实现隐藏的效果</li>
-<li>浮动之后要记得清除浮动。清除浮动清除的是并列的元素的浮动<br>后面的内容在首页不显示，请点击下方的展开全文或者
-    
-    <a class="article-more-a" href="/2019/10/01/学习随记/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">记录</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2019/10/01/学习随记/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-js中keyup-keypress-keydown以及oninput四个事件" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2019/09/29/js中keyup-keypress-keydown以及oninput四个事件/" target="_blank">js中keyup, keypress, keydown以及oninput四个事件.md</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2019/09/29/js中keyup-keypress-keydown以及oninput四个事件/" class="archive-article-date">
-        <time datetime="2019-09-29T02:19:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-29</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="关于js中keyup-keypress-keydown以及oninput四个事件"><a href="#关于js中keyup-keypress-keydown以及oninput四个事件" class="headerlink" title="关于js中keyup, keypress, keydown以及oninput四个事件"></a>关于js中keyup, keypress, keydown以及oninput四个事件</h1><h2 id="基本知识"><a href="#基本知识" class="headerlink" title="基本知识"></a>基本知识</h2><h3 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h3><ol>
-<li>keydown事件：当用户按下键盘上的任意键时触发，而且如果按住不放的话，会重复触发此事件。</li>
-<li>keypress事件：当用户按下键盘上的字符键时触发，而且如果按住不放的话，会重复触发此事件。</li>
-<li>keyup事件：当用户释放键盘上的键时触发。</li>
-<li>oninput事件：在 &lt;input&gt; 或 &lt;textarea&gt; 元素的值发生改变时触发<br>后面的内容在首页不显示，请点击下方的展开全文或者
-    
-    <a class="article-more-a" href="/2019/09/29/js中keyup-keypress-keydown以及oninput四个事件/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2019/09/29/js中keyup-keypress-keydown以及oninput四个事件/">展开全文 >></a>
     </p>
     
 

@@ -6,20 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | FGstudy</title>
+  <title>jQuery与ajax学习记录第一部分--基础知识 | FGstudy</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="永无止境的学习">
-<meta property="og:type" content="website">
-<meta property="og:title" content="FGstudy">
-<meta property="og:url" content="http://yoursite.com/archives/2019/page/2/index.html">
+  <meta name="description" content="jQuery基础入口函数 入口函数的写法 123456789//原生js写法window.onload = function(event)&amp;#123;	...&amp;#125;//jQuery写法$(document).ready(function()&amp;#123;	&amp;#125;);  原生js与jQuery入口函数的区别    加载模式不同，原生JS会等到DOM元素加载完毕,并且图片也加载完毕才会执行，">
+<meta name="keywords" content="记录">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jQuery与ajax学习记录第一部分--基础知识">
+<meta property="og:url" content="http://yoursite.com/2019/10/09/jQuery与ajax学习记录1/index.html">
 <meta property="og:site_name" content="FGstudy">
-<meta property="og:description" content="永无止境的学习">
+<meta property="og:description" content="jQuery基础入口函数 入口函数的写法 123456789//原生js写法window.onload = function(event)&amp;#123;	...&amp;#125;//jQuery写法$(document).ready(function()&amp;#123;	&amp;#125;);  原生js与jQuery入口函数的区别    加载模式不同，原生JS会等到DOM元素加载完毕,并且图片也加载完毕才会执行，">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-10-09T11:57:44.265Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="FGstudy">
-<meta name="twitter:description" content="永无止境的学习">
+<meta name="twitter:title" content="jQuery与ajax学习记录第一部分--基础知识">
+<meta name="twitter:description" content="jQuery基础入口函数 入口函数的写法 123456789//原生js写法window.onload = function(event)&amp;#123;	...&amp;#125;//jQuery写法$(document).ready(function()&amp;#123;	&amp;#125;);  原生js与jQuery入口函数的区别    加载模式不同，原生JS会等到DOM元素加载完毕,并且图片也加载完毕才会执行，">
   
     <link rel="alternative" href="/atom.xml" title="FGstudy" type="application/atom+xml">
   
@@ -197,49 +199,452 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-jQuery与ajax学习记录1" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/10/01/学习随记/" class="archive-article-date">
-        <time datetime="2019-10-01T07:36:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-01</time>
-</a>
-
-        </div>
-    	 
+      <header class="article-header">
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2019/10/01/学习随记/" target="_blank">学习随记</a>
   
+    <h1 class="article-title" itemprop="name">
+      jQuery与ajax学习记录第一部分--基础知识
     </h1>
   
 
 
-        <div class="article-info info-on-right">
-          
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2019/10/09/jQuery与ajax学习记录1/" class="archive-article-date">
+        <time datetime="2019-10-09T11:37:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
+</a>
+
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">4.2k字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">16分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h2 id="jQuery基础"><a href="#jQuery基础" class="headerlink" title="jQuery基础"></a>jQuery基础</h2><h3 id="入口函数"><a href="#入口函数" class="headerlink" title="入口函数"></a>入口函数</h3><ol>
+<li><p>入口函数的写法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//原生js写法</span><br><span class="line">window.onload = function(event)&#123;</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//jQuery写法</span><br><span class="line">$(document).ready(function()&#123;</span><br><span class="line">	</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>原生js与jQuery入口函数的区别</p>
+</li>
+</ol>
+<ul>
+<li>加载模式不同，原生JS会等到DOM元素加载完毕,并且图片也加载完毕才会执行，jQuery会等到DOM元素加载完毕,但不会等到图片也加载完毕就会执行</li>
+<li>原生的JS如果编写了多个入口函数,后面编写的会覆盖前面编写的，jQuery中编写多个入口函数,后面的不会覆盖前面的<br>后面的内容在首页不显示，请点击下方的展开全文或者<a id="more"></a></li>
+</ul>
+<ol start="3">
+<li><p>入口函数的其他写法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">// 1.第一种写法</span><br><span class="line">        $(document).ready(function () &#123;</span><br><span class="line">            // alert(&quot;hello lnj&quot;);</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        // 2.第二种写法</span><br><span class="line">        jQuery(document).ready(function () &#123;</span><br><span class="line">            // alert(&quot;hello lnj&quot;);</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        // 3.第三种写法(推荐)</span><br><span class="line">        $(function () &#123;</span><br><span class="line">            // alert(&quot;hello lnj&quot;);</span><br><span class="line">        &#125;);</span><br><span class="line">        // 4.第四种写法</span><br><span class="line">        jQuery(function () &#123;</span><br><span class="line">            alert(&quot;hello lnj&quot;);</span><br><span class="line">        &#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如果使用的其他框架中也使用了$，则可能会导致冲突问题，解决方法</p>
+</li>
+</ol>
+<ul>
+<li>释放$的使用权， 注意点: 释放操作jQuery.noConflict();必须在编写其它jQuery代码之前编写，释放之后就不能再使用$,改为使用jQuery，</li>
+<li>自定义一个访问符号，例如nj= jQuery.noConflict();<h3 id="核心函数"><a href="#核心函数" class="headerlink" title="核心函数"></a>核心函数</h3></li>
+</ul>
+<ol>
+<li>$()；里面可以接收参数类型，</li>
+</ol>
+<ul>
+<li><p>接收一个函数，例如入口函数</p>
+</li>
+<li><p>接收一个字符串</p>
+<ul>
+<li>接收一个字符串选择器，返回一个jQuery对象, 对象中保存了找到的DOM元素</li>
+<li>接收一个字符串代码片段，返回一个jQuery对象, 对象中保存了创建的DOM元素<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var $box1 = $(&quot;.box1&quot;);</span><br><span class="line">var $box2 = $(&quot;#box2&quot;);</span><br><span class="line">console.log($box1);</span><br><span class="line">console.log($box2);</span><br><span class="line">var $p = $(&quot;&lt;p&gt;我是段落&lt;/p&gt;&quot;);</span><br><span class="line">console.log($p);</span><br><span class="line">$box1.append($p);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>接收一个DOM元素，该元素会被包装成一个jQuery对象返回</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ar span = document.getElementsByTagName(&quot;span&quot;)[0];</span><br><span class="line">console.log(span);</span><br><span class="line">var $span = $(span);</span><br><span class="line">console.log($span);</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="jQuery对象"><a href="#jQuery对象" class="headerlink" title="jQuery对象"></a>jQuery对象</h3><ol>
+<li>jQuery对象是一个伪数组</li>
+<li>伪数组就是有0到length-1的属性, 并且有length属性的对象<h3 id="静态方法与实例方法"><a href="#静态方法与实例方法" class="headerlink" title="静态方法与实例方法"></a>静态方法与实例方法</h3></li>
+<li>在js中静态方法就是直接添加到类上面的，实例方法是直接添加到类的原型上面的</li>
+</ol>
+<ul>
+<li>静态方法通过类名调用，实例方法通过实例调用</li>
+</ul>
+<ol start="2">
+<li>静态方法each方法</li>
+</ol>
+<ul>
+<li><p>原生js的forEach方法，接收两个参数，第一个参数是遍历到的元素，第二个参数是当前遍历到的索引，注意该方法可能遍历数组，不能遍历伪数组</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">arr.forEach(function (value, index) &#123;</span><br><span class="line">    console.log(index, value);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>利用jQuery的each静态方法遍历数组,接收两个参数，接收一个参数是处理数组元素的函数，注意 jQuery的each方法是可以遍历伪数组的</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$.each(arr, function (index, value) &#123;</span><br><span class="line">	console.log(index, value);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ol start="3">
+<li>静态方法map方法</li>
+</ol>
+<ul>
+<li>利用原生JS的map方法遍历，接收三个参数：第一个参数: 当前遍历到的元素，第二个参数: 当前遍历到的索引，第三个参数: 当前被遍历的数组<br>  +注意点: 和原生的forEach一样,不能遍历的伪数组</li>
+<li>利用jQuery的map静态方法遍历数组，第一个参数: 要遍历的数组 第二个参数: 每遍历一个元素之后执行的回调函数<ul>
+<li>回调函数的参数:第一个参数: 遍历到的元素，第二个参数: 遍历到的索引</li>
+<li>注意点:和jQuery中的each静态方法一样, map静态方法也可以遍历伪数组<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$.map(arr, function (value, index) &#123;</span><br><span class="line">     console.log(index, value);</span><br><span class="line"> &#125;);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<ol start="4">
+<li>jQuery的map和each的区别</li>
+</ol>
+<ul>
+<li>返回值不同<ul>
+<li>each静态方法默认的返回值就是, 遍历谁就返回谁</li>
+<li>map静态方法默认的返回值是一个空数组‘</li>
+</ul>
+</li>
+<li>对数组的处理不同<ul>
+<li>each静态方法不支持在回调函数中对遍历的数组进行处理</li>
+<li>map静态方法可以在回调函数中通过return对遍历的数组进行处理, 然后生成一个新的数组返回</li>
+</ul>
+</li>
+</ul>
+<ol start="5">
+<li>其他静态方法</li>
+</ol>
+<ul>
+<li>$.trim();<ul>
+<li>作用: 去除字符串两端的空格</li>
+<li>参数: 需要去除空格的字符串</li>
+<li>返回值: 去除空格之后的字符串</li>
+</ul>
+</li>
+<li>$.isWindow();<ul>
+<li>作用: 判断传入的对象是否是window对象</li>
+<li>返回值: true/false</li>
+</ul>
+</li>
+<li>$.isArray();<ul>
+<li>作用: 判断传入的对象是否是真数组</li>
+<li>返回值: true/false</li>
+</ul>
+</li>
+<li>$.isFunction();<ul>
+<li>作用: 判断传入的对象是否是函数</li>
+<li>返回值: true/false</li>
+<li>jQuery框架本质上是一个函数(function( window, undefined ) {})( window );</li>
+</ul>
+</li>
+</ul>
+<ol start="6">
+<li><p>$.holdReady(true); 作用: 暂停ready执行，$.holdReady(false);取消暂停 </p>
+<h3 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h3><p>大部分跟css选择器一样，可以查文档</p>
+</li>
+<li><p>:empty 作用:找到既没有文本内容也没有子元素的指定元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var $div = $(&quot;div:empty&quot;);</span><br><span class="line">console.log($div);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>:parent 作用: 找到有文本内容或有子元素的指定元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var $div = $(&quot;div:parent&quot;);</span><br><span class="line">console.log($div);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>:contains(text) 作用: 找到包含指定文本内容的指定元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var $div = $(&quot;div:contains(&apos;hello&apos;)&quot;);</span><br><span class="line">console.log($div);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>:has(selector) 作用: 找到包含指定子元素的指定元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var $div = $(&quot;div:has(&apos;span&apos;)&quot;);</span><br><span class="line">console.log($div);</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="属性和属性节点"><a href="#属性和属性节点" class="headerlink" title="属性和属性节点"></a>属性和属性节点</h3><h4 id="原生js"><a href="#原生js" class="headerlink" title="原生js"></a>原生js</h4><ol>
+<li>属性：对象身上保存的变量就是属性</li>
+<li>操作属性</li>
+</ol>
+<ul>
+<li>对象.属性名称 = 值;</li>
+<li>对象.属性名称;</li>
+<li>对象[“属性名称”] = 值;</li>
+<li>对象[“属性名称”];</li>
+</ul>
+<ol start="3">
+<li><p>属性节点:在编写HTML代码时,在HTML标签中添加的属性就是属性节点,例如</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;span name = &quot;it666&quot;&gt;&lt;/span&gt; //name就是属性节点</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看属性和属性节点：在浏览器中找到span这个DOM元素之后, 展开看到的都是属性，在attributes属性中保存的所有内容都是属性节点</p>
+</li>
+</ol>
+<ul>
+<li>如何找到这个元素？在浏览器f12后，点开source，在最左边选中要查看的文档后，看最右边上面的watch，如果watch为空白，则可以点击上面的+按钮，再输入document.getElementsByTagName(“span”);后回车，就能找到dom元素</li>
+</ul>
+<ol start="5">
+<li>如何操作属性节点:</li>
+</ol>
+<ul>
+<li>DOM元素.setAttribute(“属性名称”, “值”);</li>
+<li>DOM元素.getAttribute(“属性名称”);</li>
+</ul>
+<ol start="6">
+<li>属性和属性节点有什么区别:任何对象都有属性, 但是只有DOM对象才有属性节点<h4 id="jQuery操作属性和属性节点"><a href="#jQuery操作属性和属性节点" class="headerlink" title="jQuery操作属性和属性节点"></a>jQuery操作属性和属性节点</h4></li>
+<li>attr(name|pro|key,val|fn)</li>
+</ol>
+<ul>
+<li>作用: 获取或者设置属性节点的值</li>
+<li>参数：可以传递一个参数, 也可以传递两个参数<ul>
+<li>如果传递一个参数, 代表获取属性节点的值</li>
+<li>如果传递两个参数, 代表设置属性节点的值</li>
+</ul>
+</li>
+<li>注意<ul>
+<li>如果是获取:无论找到多少个元素, 都只会返回第一个元素指定的属性节点的值</li>
+<li>如果是设置:找到多少个元素就会设置多少个元素</li>
+<li>如果是设置: 如果设置的属性节点不存在, 那么系统会自动新增</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>removeAttr(name)， 删除属性节点，注意点:会删除所有找到元素指定的属性节点</li>
+<li>prop方法，特点和attr方法一致，注意 prop方法不仅能够操作属性, 他还能操作属性节点</li>
+<li>removeProp方法，特点和removeAttr方法一致</li>
+<li>官方推荐在操作属性节点时,具有 true 和 false 两个属性的属性节点，如 checked, selected 或者 disabled 使用prop()，其他的使用 attr()<h3 id="操作类"><a href="#操作类" class="headerlink" title="操作类"></a>操作类</h3></li>
+<li>addClass(class|fn)</li>
+</ol>
+<ul>
+<li>作用: 添加一个类</li>
+<li>如果要添加多个, 多个类名之间用空格隔开即可</li>
+</ul>
+<ol start="2">
+<li>removeClass([class|fn])</li>
+</ol>
+<ul>
+<li>作用: 删除一个类</li>
+<li>如果想删除多个, 多个类名之间用空格隔开即可</li>
+</ul>
+<ol start="3">
+<li>toggleClass(class|fn[,sw])</li>
+</ol>
+<ul>
+<li>作用: 切换类</li>
+<li>有就删除, 没有就添加<h3 id="文本值相关"><a href="#文本值相关" class="headerlink" title="文本值相关"></a>文本值相关</h3></li>
+</ul>
+<ol>
+<li>html([val|fn])</li>
+</ol>
+<ul>
+<li>和原生JS中的innerHTML一模一样</li>
+</ul>
+<ol start="2">
+<li>text([val|fn])</li>
+</ol>
+<ul>
+<li>和原生JS中的innerText一模一样</li>
+</ul>
+<ol start="3">
+<li>val([val|fn|arr])</li>
+</ol>
+<ul>
+<li>和原生JS中的value一模一样<h3 id="css"><a href="#css" class="headerlink" title="css"></a>css</h3><h4 id="操作样式css"><a href="#操作样式css" class="headerlink" title="操作样式css"></a>操作样式css</h4></li>
+</ul>
+<ol>
+<li><p>逐个设置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$(&quot;div&quot;).css(&quot;width&quot;,&quot;100px&quot;);</span><br><span class="line">$(&quot;div&quot;).css(&quot;height&quot;,100px);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>链式设置，注意点: 链式操作如果大于3步, 建议分开</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(&quot;div&quot;).css(&quot;width&quot;,&quot;100px&quot;).css(&quot;height&quot;,&quot;100px&quot;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>批量设置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$(&quot;div&quot;).css(&#123;</span><br><span class="line">	width: 100px,</span><br><span class="line">	height: 100px</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>获取CSS样式值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(&quot;div&quot;).css(&quot;width&quot;);</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h4 id="位置与尺寸"><a href="#位置与尺寸" class="headerlink" title="位置与尺寸"></a>位置与尺寸</h4><ol>
+<li><p>获取元素的宽度 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//获取</span><br><span class="line">$(&quot;.father&quot;).width();</span><br><span class="line">//设置</span><br><span class="line">$(&quot;.father&quot;).width(&quot;100px&quot;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>offset([coordinates])</p>
+</li>
+</ol>
+<ul>
+<li>作用: 获取元素距离窗口的偏移位<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//获取元素距离窗口左边的偏移位</span><br><span class="line">console.log($(&quot;.son&quot;).offset().left);</span><br><span class="line">//设置素距离窗口左边的偏移位</span><br><span class="line">$(&quot;.son&quot;).offset(&#123;</span><br><span class="line">	left:10 //注意没有单位</span><br><span class="line">&#125;)</span><br><span class="line">``` </span><br><span class="line">3. position()</span><br><span class="line">+ 作用: 获取元素距离定位元素的偏移位</span><br><span class="line">+ position方法只能获取不能设置,如果需要设置可以通过css方法设置</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>$(“.son”).css({<br>    left:”10px”<br>});</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#### 滚动偏移</span><br><span class="line">1. 获取滚动的偏移位，$(&quot;.scroll&quot;).scrollTop()</span><br><span class="line">2. 获取网页滚动的偏移位，</span><br><span class="line">+ 注意点: 为了保证浏览器的兼容, 获取网页滚动的偏移位需要按照如下写法</span><br></pre></td></tr></table></figure>
+
+<p>$(“body”).scrollTop() + $(“html”).scrollTop();</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">3. 设置滚动的偏移位, $(&quot;.scroll&quot;).scrollTop(300);注意这里传数字值而不是字符串</span><br><span class="line">4. 设置网页滚动偏移位</span><br><span class="line">+ 注意点: 为了保证浏览器的兼容, 设置网页滚动偏移位的时候必须按照如下写法</span><br></pre></td></tr></table></figure>
+
+<p>$(“body,html”).scrollTop(300)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">### 事件</span><br><span class="line">#### 事件绑定</span><br><span class="line">1. eventName(fn); 编码效率略高/ 部分事件jQuery没有实现,所以不能添加,jq实现的事件可以查API</span><br></pre></td></tr></table></figure>
+
+<p>$(“button”).click(function(){<br>    alert(“hello”);<br>})</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2. on(eventName, fn); 编码效率略低/ 所有js事件都可以添加，还可以添加自定义事件和事件命名空间</span><br></pre></td></tr></table></figure>
+
+<p>$(“button”).on(“click”,function(){<br>    alert(“hello”);<br>})</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">3. 上面两个方法可以添加多个相同或者不同类型的事件,不会覆盖</span><br><span class="line">#### 事件移除</span><br><span class="line">1. 移除事件使用off方法</span><br><span class="line">+ 如果不传递参数, 会移除所有的事件， $(&quot;button&quot;).off();</span><br><span class="line">+ 传递一个参数, 会移除所有指定类型的事件，$(&quot;button&quot;).off(&quot;click&quot;);</span><br><span class="line">+ 传递两个参数, 会移除所有指定类型的指定事件， $(&quot;button&quot;).off(&quot;click&quot;, test1);</span><br><span class="line">#### 事件冒泡和默认行为</span><br><span class="line">1. 什么是事件冒泡，事件触发顺序是由内到外的，虽然只点击子元素，但是它的父元素也会触发相应的事件</span><br><span class="line">2. 如何阻止事件冒泡，注意阻止事件冒泡的方法要写在子元素里</span><br><span class="line">+ 设置事件函数返回值为false</span><br></pre></td></tr></table></figure>
+
+<p>$(“.son”).click(function(event){ //每触发一个事件都会产生一个event对象<br>    //return false;<br>    event.stopPropagation(); //注意这两个阻止方法都要在子元素里面写<br>})</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">+ 使用 event.stopPropagation();</span><br><span class="line">3. 什么是默认行为，就是一个标签自带的默认行为，比如点击a标签会跳转</span><br><span class="line">4. 如何阻止默认行为，</span><br><span class="line">+ 设置事件函数返回值为false</span><br><span class="line">+ 使用event.preventDefault();</span><br></pre></td></tr></table></figure>
+
+<p> $(“a”).click(function (event) {<br>                alert(“弹出注册框”);<br>                // return false;<br>                event.preventDefault();<br>            });</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#### 事件自动触发</span><br><span class="line">1. trigger: 如果利用trigger自动触发事件,会触发事件冒泡，会触发默认行为</span><br><span class="line">2. triggerHandler: 如果利用triggerHandler自动触发事件, 不会触发事件冒泡，不会触发默认行为</span><br></pre></td></tr></table></figure>
+
+<p>$(“.son”).click(function(){<br>    alert(“son”);<br>})<br>$(“.son”).trigger(“click”); //原来要点击才能触发，现在是不用点击，自动触发<br>$(“.son”).triggerHandler(“click”)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3. 注意，a标签有个特别之处，如果利用trigger自动触发事件后不会触发默认行为，如果想要想让a触发默认行为，则需要在a标签中放一个span标签，然后对span标签设置事件，自动触发也要设置到span上,写成下面的样子</span><br></pre></td></tr></table></figure>
+
+<p> $(“span”).click(function () {<br>                alert(“a”);<br>            });<br> $(“span”).trigger(“click”);</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#### 自定义事件</span><br><span class="line">1. 两个条件</span><br><span class="line">+  事件必须是通过on绑定的</span><br><span class="line">+  事件必须通过trigger或者triggerHandler来触发</span><br></pre></td></tr></table></figure>
+
+<p> $(“.son”).on(“myClick”, function () {<br>                alert(“son”);<br>            });<br>            $(“.son”).triggerHandler(“myClick”);</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#### 事件命名空间,多人协作时注意</span><br><span class="line">1. 两个条件</span><br><span class="line">+  事件必须是通过on绑定的</span><br><span class="line">+  事件必须通过trigger或者triggerHandler来触发</span><br></pre></td></tr></table></figure>
+
+<p> $(“.son”).on(“click.zs”, function () {<br>    alert(“click1”);<br>});<br> $(“.son”).on(“click.ls”, function () {<br>    alert(“click2”);<br>});<br>// $(“.son”).trigger(“click.zs”);<br>$(“.son”).trigger(“click.ls”);</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">2. 利用trigger触发子元素带命名空间的事件, 那么父元素带相同命名空间的事件也会被触发. 而父元素没有命名空间的事件不会被触发</span><br><span class="line">3. 利用trigger触发子元素不带命名空间的事件,那么子元素所有相同类型的事件和父元素所有相同类型的事件都会被触发</span><br><span class="line">#### 事件委托</span><br><span class="line">1. 什么是事件委托?请别人帮忙做事情, 然后将做完的结果反馈给我们</span><br><span class="line">2. 在jQuery中,如果通过核心函数找到的元素不止一个, 那么在添加事件的时候,jQuery会遍历所有找到的元素,给所有找到的元素添加事件</span><br></pre></td></tr></table></figure>
+
+<p>$(“ul&gt;li”).click(function () {<br>     console.log($(this).html());<br> });</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">3. 事件委托示例</span><br><span class="line">+ 解析： 以下代码的含义, 让ul帮li监听click事件 之所以能够监听, 是因为入口函数执行的时候ul就已经存在了, 所以能够添加事件，之所以this是li,是因为我们点击的是li, 而li没有click事件, 所以事件冒泡传递给了ul,ul响应了事件, 既然事件是从li传递过来的,所以ul必然指定this是谁</span><br></pre></td></tr></table></figure>
+
+<p>$(“ul”).delegate(“li”, “click”, function () {<br>    console.log($(this).html());<br>});</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">#### 移入移出事件</span><br><span class="line">1.  mouseover/mouseout事件, 子元素被移入移出也会触发父元素的事件</span><br><span class="line">2.  mouseenter/mouseleave事件, 子元素被移入移出不会触发父元素的事件</span><br><span class="line">3. hover事件,接收两个参数，都是函数作为参数，第一个参数的函数是移入事件的，第二个参数的函数是移出事件的，如果只传了一个函数说明触发移入移出事件</span><br><span class="line">### 动画效果</span><br><span class="line">#### 基本</span><br><span class="line">1. show([s,[e],[fn]])，显示隐藏的匹配元素。第一个参数是速度，一般用毫秒值，第二个参数可选表示效果默认是&quot;swing&quot;（加速），可用参数&quot;linear&quot;（匀速），第三个参数是回调函数，在动画完成时执行，</span><br><span class="line">2. hide([s,[e],[fn]])，隐藏显示的元素，参数基本同上</span><br><span class="line">3. toggle([s,[e],[fn]]),如果元素是可见的，切换为隐藏的；如果元素是隐藏的，切换为可见的。</span><br><span class="line">#### 滑动</span><br><span class="line">1. slideDown([s],[e],[fn])</span><br><span class="line">2. slideUp([s,[e],[fn]])</span><br><span class="line">3. slideToggle([s],[e],[fn])</span><br><span class="line">#### 淡入淡出</span><br><span class="line">1. fadeIn([s],[e],[fn])</span><br><span class="line">2. fadeOut([s],[e],[fn])</span><br><span class="line">3. fadeTo([[s],o,[e],[fn]]) ，可以设置淡到什么程度</span><br><span class="line">4. fadeToggle([s,[e],[fn]])，如果元素是可见的，切换为淡出的；如果元素是隐藏的，切换为淡入的</span><br><span class="line">#### 自定义</span><br><span class="line">1. animate(p,[s],[e],[fn])，</span><br><span class="line">+ 第一个参数: 接收一个对象, 可以在对象中修改属性</span><br><span class="line">	+  在jQuery的&#123;&#125;中可以同时修改多个属性, 多个属性的动画也会同时执行</span><br><span class="line">+ 第二个参数: 指定动画时长</span><br><span class="line">+ 第三个参数: 指定动画节奏, 默认就是swing</span><br><span class="line">+ 第四个参数: 动画执行完毕之后的回调函数</span><br><span class="line">#### stop,delay</span><br><span class="line">1. stop([c],[j])</span><br><span class="line">2. delay(d,[q])，用于告诉系统延迟时长</span><br><span class="line">3. finish([queue]),等同于stop</span><br><span class="line">4. stop的参数不同，效果也不同</span><br><span class="line">+ 立即停止当前动画, 继续执行后续的动画</span><br></pre></td></tr></table></figure>
+
+<p>// $(“div”).stop();<br>// $(“div”).stop(false);<br>// $(“div”).stop(false, false);</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">+ 立即停止当前和后续所有的动画</span><br></pre></td></tr></table></figure>
+
+<p>// $(“div”).stop(true);<br> // $(“div”).stop(true, false);</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">+ 立即完成当前的, 继续执行后续动画</span><br></pre></td></tr></table></figure>
+
+<p>$(“div”).stop(false, true);</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">+ 立即完成当前的, 并且停止后续所有的</span><br></pre></td></tr></table></figure>
+
+<p> $(“div”).stop(true, true);</p>
+<p>```</p>
+<h3 id="节点相关"><a href="#节点相关" class="headerlink" title="节点相关"></a>节点相关</h3><h4 id="添加节点"><a href="#添加节点" class="headerlink" title="添加节点"></a>添加节点</h4><ol>
+<li>内部插入</li>
+</ol>
+<ul>
+<li>会将元素添加到指定元素内部的最后      append(content|fn)，appendTo(content)</li>
+<li>会将元素添加到指定元素内部的最前面     prepend(content|fn)， prependTo(content)</li>
+</ul>
+<ol start="2">
+<li>外部插入</li>
+</ol>
+<ul>
+<li>会将元素添加到指定元素同级的后面       after(content|fn)</li>
+<li>会将元素添加到指定元素同级的前面       before(content|fn)    </li>
+</ul>
+<ol start="3">
+<li>外部插入，与2的写法相反            insertAfter(content)，insertBefore(content)<h4 id="删除节点"><a href="#删除节点" class="headerlink" title="删除节点"></a>删除节点</h4></li>
+<li>remove([expr])删除指定元素</li>
+<li>empty() 删除指定元素的内容和子元素, 指定元素自身不会被删除</li>
+<li>detach([expr])跟remove一样</li>
+<li>detach与remove的区别：</li>
+</ol>
+<ul>
+<li>利用remove删除之后再重新添加,原有的事件无法响应</li>
+<li>利用detach删除之后再重新添加,原有事件可以响应   <h4 id="替换节点"><a href="#替换节点" class="headerlink" title="替换节点"></a>替换节点</h4></li>
+</ul>
+<ol>
+<li>替换所有匹配的元素为指定的元素        replaceWith(content|fn)，  replaceAll(selector)<h4 id="复制节点"><a href="#复制节点" class="headerlink" title="复制节点"></a>复制节点</h4></li>
+<li>clone([Even[,deepEven]]) 如果传入false就是浅复制, 如果传入true就是深复制</li>
+</ol>
+<ul>
+<li>浅复制只会复制元素, 不会复制元素的事件 </li>
+<li>深复制会复制元素, 而且还会复制元素的事件</li>
+</ul>
+
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/alipay.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weixin.png">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
+        </div>
+      </a>
+    </div>
+    
+
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          fg
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="http://yoursite.com/2019/10/09/jQuery与ajax学习记录1/" title="jQuery与ajax学习记录第一部分--基础知识" target="_blank">http://yoursite.com/2019/10/09/jQuery与ajax学习记录1/</a>
+        </li>
+        <li>
+          <strong>版权声明： </strong>
+          本博客所有文章除特别声明外，均采用 <a href="https://www.apache.org/licenses/LICENSE-2.0.html" rel="external nofollow" target="_blank">Apache License 2.0</a> 许可协议。转载请注明出处！
+        </li>
+      </ul>
+    </div>
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">记录</a>
         		</li>
@@ -247,109 +652,116 @@
 		</ul>
 	</div>
 
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
+    
 
+    
 
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/09/jQuery与ajax学习记录1/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/09/29/js中keyup-keypress-keydown以及oninput四个事件/" class="archive-article-date">
-        <time datetime="2019-09-29T02:19:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-29</time>
-</a>
 
+
+<nav id="article-nav">
+  
+    <a href="/2019/10/09/jQuery与ajax学习记录2/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          jQuery与ajax学习记录第二部分--原理、ajax、json、cookie
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/10/01/js高级程序设计第七部分/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">js高级程序设计第七部分</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2019/09/29/js中keyup-keypress-keydown以及oninput四个事件/" target="_blank">js中keyup, keypress, keydown以及oninput四个事件.md</a>
-  
-    </h1>
-  
+        
+        
+    </div>
+</aside>
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/09/28/hello-world/" class="archive-article-date">
-        <time datetime="2019-09-28T03:17:11.454Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-28</time>
-</a>
 
-        </div>
-    	 
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/2019/">&laquo; Prev</a><a class="page-number" href="/archives/2019/">1</a><span class="page-number current">2</span>
-    </nav>
-  
+
+
+
+
 
 
           </div>
@@ -390,8 +802,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
